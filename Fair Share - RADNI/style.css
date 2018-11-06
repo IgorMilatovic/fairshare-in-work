@@ -41,7 +41,7 @@ h1,h2,h3,h4 {
 .hr-black-double {
     border: 1px solid var(--black);
     border-radius: 2px;
-    max-width: 300px;
+    max-width: 80%;
     height: 2px;
 }
 
@@ -80,32 +80,50 @@ nav ul li {
     letter-spacing: 2px;
     font-size: 1.4rem;
 }
-    nav ul li:hover a {
-        color: var(--yellow) !important;
-        background: var(--black);
-    }
 
-/* .nav-link.active {
+.nav-item .nav-link {
+    color: var(--black) !important;
+    padding: .2rem .4rem;
+    transition: all .4s;
+}
+
+.nav-item.active .nav-link,
+.nav-item:hover .nav-link {
+    color: var(--ivory) !important;
     background: var(--black);
-    color: var(--yellow) !important;
-} */
+}
+
+nav button.navbar-toggler {
+    margin-right: 4rem;
+    border: solid 2px var(--black) !important;
+    border-radius: 4px;
+}
 
 /* Styling of header */
 header {
     background-image: url('img/header.jpg');
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     height: calc(100vh - 60px);
     animation: fade-in 1.4s ease;
 }
 
 header h1 {
     display: inline-block;
+    margin-top: 5rem;
+    font-size: 5rem;
     border-bottom: solid 2px var(--yellow);
     animation: slide-top 2s ease;
 }
 
 header h2 {
+    font-size: 2rem;
+    text-shadow: 
+                -1px -1px 0 var(--ivory),  
+                1px -1px 0 var(--ivory),
+                -1px 1px 0 var(--ivory),
+                1px 1px 0 var(--ivory);
+
     animation: slide-bot 2s ease;
 }
 
@@ -142,10 +160,13 @@ section h3, footer h3 {
 }
 
 .parallax-1 {
-    height: 400px;
+    height: 500px;
+
+    margin-bottom: -2rem;
+    
     border-bottom: 1px solid var(--black);
     background-attachment: fixed;
-    background-image: url('img/parallax.jpeg');
+    background-image: url('img/pexels-photo-908965.jpeg');
     background-position: center center;
     background-size: cover;
 }
@@ -154,21 +175,51 @@ section h3, footer h3 {
     border-top: 1px solid var(--black);
     border-bottom: 1px solid var(--black);
     margin-top: -16px;
-    height: 400px;
+    
+    height: 250px;
+    margin-bottom: -2rem;
+    
     background-attachment: fixed;
     background-image: url('img/izdavastvo.jpeg');
     background-position: center center;
     background-size: cover;
 }
 
-.parallax-1 span,  .parallax-2 span{
+.parallax-1 span, .parallax-2 span{
     color: var(--yellow);
-    font-size: 1.9em;
+    font-size: 5rem;
+    margin-bottom: 1rem;
     text-shadow:
                -2px -2px 0 var(--black),  
                 2px -2px 0 var(--black),
                -2px 2px 0 var(--black),
                 2px 2px 0 var(--black);
+}
+
+.para-info {
+    max-width: 500px;
+    color: var(--ivory);
+    background: rgba(0, 0, 0, .5);
+    margin-bottom: -1rem;
+    padding-bottom: 0;
+}
+
+.para-info p {
+    font-size: 1.3rem;
+    padding: 1rem 2rem 2rem;
+}
+
+.parallax-1 button,
+.parallax-2 button {
+    margin-bottom: 1rem;
+    padding: 0.7rem 1.6rem;
+    background-color: var(--ivory);
+    border: 1px solid var(--black);
+    border-radius: 4px;
+    color: var(--black);
+    font-size: 1.2rem;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
 }
 
 /* Styling of services section */
@@ -178,28 +229,34 @@ section h3, footer h3 {
 }
 
 #services h3 {
-    color: var(--ivory);
+    color: var(--black);
     font-size: 3.7em;
-    text-shadow:
-               -3px -3px 0 var(--black),  
-                3px -3px 0 var(--black),
-               -3px 3px 0 var(--black),
-                3px 3px 0 var(--black);
+        /*text-shadow:
+                   -3px -3px 0 var(--ivory),  
+                    3px -3px 0 var(--ivory),
+                   -3px 3px 0 var(--ivory),
+                    3px 3px 0 var(--ivory);*/
     padding: 0 2rem;
 }
 
-.service-ikona {
-    width: 130px;
-    border-radius: 100%;
-    border: 9px solid var(--black);
+.pravo-title {
+    color: var(--black) !important;
 }
 
-.service-ikona {
-    margin-top: 75px;
+.service-ikona-pravo {
+    z-index: 1;
+    width: 86px !important;
+    border-radius: 100%;
+    /*border: 9px solid var(--black);*/
 }
-.pravo-title {
-    border-top: 1px solid yellow;
-    border-bottom: 1px solid yellow;
+
+.service-ikona-disco {
+    z-index: 1;
+    width: 80px;
+    border-radius: 100%;
+    border: 9px solid var(--black);
+    position: absolute;
+    bottom: 8rem;
 }
 
 #services h4 {
@@ -251,9 +308,9 @@ section h3, footer h3 {
     background: var(--black);
 }
 
-.ekspertsko-height {
+/* .ekspertsko-height {
     min-height: 460px;
-}
+} */
 
 #services .disko-img {
     background-image: url('img/izdavastvo.jpeg');
@@ -325,9 +382,13 @@ footer .footer-info {
     padding: .2rem;
 }
 
-/* .footer-info i {
-    color: #fff;
-} */
+.footer-info p.cont-info:hover,
+.footer-info p.cont-info:hover i {
+    display: inline-block;
+    color: var(--yellow);
+    cursor: pointer;
+    transition: all .4s;
+}
 
 /* .footer-info i:nth-child(3) {
     font-size: 1.5rem;
@@ -352,6 +413,7 @@ footer a {
 }
     footer a:hover {
         color: var(--yellow);
+        transition: all .4s;
     }
 
 /* Keyframes Animations */
@@ -404,6 +466,15 @@ footer a {
         font-size: 14px;
     }
 
+    header h1 {
+        font-size: 4rem;
+        margin-top: 2.5rem;
+    }
+
+    header h2 {
+        font-size: 2rem;
+    }
+
     #about img {
         max-width: 300px;
     }
@@ -412,22 +483,43 @@ footer a {
         border-left: none;
     }
 
+    .para-info {
+        max-width: 400px;
+    }
+
+    .parallax-1 span, .parallax-2 span{
+        font-size: 4rem;
+    }
+
     #services h4::before {
         top: 4.8rem;
     }
 }
 
 @media only screen and (max-width: 576px) {
-    html {
+    /* html {
         font-size: 12px;
+    } */
+
+    header h1 {
+        font-size: 3rem;
+        margin-top: 0;
+    }
+
+    header h2 {
+        font-size: 1.5rem;
     }
 
     #about img {
         max-width: 250px;
     }
 
-    .parallax-1 {
-        height: 300px;
+    .para-info {
+        max-width: 300px;
+    }
+
+    .parallax-1 span, .parallax-2 span {
+        font-size: 3rem;
     }
 
     #services h4::before {

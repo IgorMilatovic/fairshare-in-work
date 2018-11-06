@@ -9,3 +9,8 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+
+//  active link on click
+$(document).on('click', 'ul li', function() {
+  $(this).addClass('active').siblings().removeClass('active');
+});
