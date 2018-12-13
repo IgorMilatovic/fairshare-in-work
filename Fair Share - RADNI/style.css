@@ -302,6 +302,12 @@ section h3, footer h3 {
 .pravo-img-1 {
     max-width: 500px;
     min-width: 300px;
+    -webkit-filter: brightness(1.2);
+    filter: brightness(1.2);
+    -webkit-filter: grayscale(0.4);
+    filter: grayscale(0.6);
+    -webkit-filter: sepia(2);
+    filter: sepia(2);
 }
 
 .bcg {
