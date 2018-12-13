@@ -1,0 +1,534 @@
+:root {
+    --yellow: #fdd325;
+    --black: #212529;
+    --ivory: #FFFFF0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;      
+}
+
+body {
+    margin-top: 60px;
+    font-family: 'Oswald', sans-serif;
+    background: var(--black);
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Impact';
+    letter-spacing: 2px;
+}
+
+.hr-ivory {
+    background: var(--ivory);
+}
+
+.hr-yellow {
+    border: 2px solid var(--yellow);
+    border-radius: 4px;
+    width: 300px;
+    height: 3px;
+}
+
+.hr-ivory-double {
+    border: 1px solid var(--ivory);
+    border-radius: 4px;
+    width: 300px;
+    height: 2px;
+}
+
+.hr-black-double {
+    border: 1px solid var(--black);
+    border-radius: 2px;
+    max-width: 80%;
+    height: 2px;
+}
+
+/* Styling of navbar */
+nav#navbar {
+    background: var(--yellow);
+    box-shadow: 1px 1px 2px #000;
+    animation: fade-in 1.4s ease;
+    z-index: 99;
+
+    position: fixed;
+    top: 0;
+    transition: top 0.3s;
+}
+
+nav .navbar-brand {
+    text-transform: uppercase;
+    font-family: 'Impact', sans-serif;
+    letter-spacing: 4px;
+    font-size: 1.6rem;
+}
+
+nav .navbar-brand span {
+    position: relative;
+    top: 3px;
+    left: 2rem;
+}
+
+nav .navbar-brand img {
+    width: 50px;
+    height: auto;
+}
+
+nav ul li {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+}
+
+.nav-item .nav-link {
+    color: var(--black) !important;
+    padding: .2rem .4rem;
+    transition: all .4s;
+}
+
+.nav-item.active .nav-link,
+.nav-item:hover .nav-link {
+    color: var(--ivory) !important;
+    background: var(--black);
+}
+
+nav button.navbar-toggler {
+    margin-right: 4rem;
+    border: solid 2px var(--black) !important;
+    border-radius: 4px;
+}
+
+/* Styling of header */
+header {
+    background-image: url('img/header.jpg');
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 60px);
+    animation: fade-in 1.4s ease;
+}
+
+header h1 {
+    display: inline-block;
+    margin-top: 5rem;
+    font-size: 5rem;
+    border-bottom: solid 2px var(--yellow);
+    animation: slide-top 2s ease;
+}
+
+header h2 {
+    font-size: 2rem;
+    text-shadow: 
+                -1px -1px 0 var(--ivory),  
+                1px -1px 0 var(--ivory),
+                -1px 1px 0 var(--ivory),
+                1px 1px 0 var(--ivory);
+
+    animation: slide-bot 2s ease;
+}
+
+section h3, footer h3 {
+    font-size: 3rem;
+}
+
+/* Styling of about section */
+#about {
+    font-size: 1.2rem;
+    color: ivory;
+    background: var(--black);
+    border-bottom: 1px solid var(--ivory);
+    
+}
+
+/* style za drugu varijantu about sekcije */
+#about img {
+    max-width: 400px;
+    height: auto;
+    float: left;
+    padding: .5rem 2rem 1rem .5rem;
+}
+
+#about img {
+    max-width: 400px;
+    height: auto;
+    float: left;
+    padding: .5rem 2rem 1rem .5rem;
+}
+
+#about .about-info {
+    border-left: solid 2px lightgrey;
+}
+
+.parallax-1 {
+    height: 500px;
+
+    margin-bottom: -2rem;
+    
+    border-bottom: 1px solid var(--black);
+    background-attachment: fixed;
+    background-image: url('img/paralax1.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.parallax-2 {
+    border-top: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+    margin-top: -16px;
+    
+    height: 250px;
+    margin-bottom: -2rem;
+    
+    background-attachment: fixed;
+    background-image: url('img/izdavastvo.jpeg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.parallax-1 span, .parallax-2 span{
+    color: var(--yellow);
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    text-shadow:
+               -2px -2px 0 var(--black),  
+                2px -2px 0 var(--black),
+               -2px 2px 0 var(--black),
+                2px 2px 0 var(--black);
+}
+
+.para-info {
+    max-width: 500px;
+    color: var(--ivory);
+    background: rgba(0, 0, 0, .5);
+    margin-bottom: -1rem;
+    padding-bottom: 0;
+}
+
+.para-info p {
+    font-size: 1.3rem;
+    padding: 1rem 2rem 2rem;
+}
+
+.parallax-1 button,
+.parallax-2 button {
+    margin-bottom: 1rem;
+    padding: 0.7rem 1.6rem;
+    background-color: var(--ivory);
+    border: 1px solid var(--black);
+    border-radius: 4px;
+    color: var(--black);
+    font-size: 1.2rem;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+}
+
+/* Styling of services section */
+#services {
+    background-color: var(--yellow);
+    padding: 0 2rem;
+}
+
+#services h3 {
+    color: var(--black);
+    font-size: 3.7em;
+        /*text-shadow:
+                   -3px -3px 0 var(--ivory),  
+                    3px -3px 0 var(--ivory),
+                   -3px 3px 0 var(--ivory),
+                    3px 3px 0 var(--ivory);*/
+    padding: 0 2rem;
+}
+
+.pravo-title {
+    color: var(--black) !important;
+}
+
+.service-ikona-pravo {
+    z-index: 1;
+    width: 86px !important;
+    border-radius: 100%;
+    /*border: 9px solid var(--black);*/
+}
+
+.service-ikona-disco {
+    z-index: 1;
+    width: 80px;
+    border-radius: 100%;
+    border: 9px solid var(--black);
+    position: absolute;
+    bottom: 8rem;
+}
+
+#services h4 {
+    position: relative;
+    z-index: 1;
+    line-height: 1;
+    color: var(--ivory);
+}
+
+/*#services h4::before {
+    content: '';
+    display: block;
+    max-width: 100%;
+    height: 50px;
+    border-radius: .8rem;
+    background-color: var(--black);
+    position: relative;
+    top: 4.2rem;
+    left: -2rem;
+    z-index: -1;
+}*/
+
+#services h4 img {
+    width: 90px;
+    border: solid 2px var(--yellow);
+    border-radius: 50%;
+    margin-right: 1.6rem;
+}
+
+#services span {
+    color: var(--yellow);
+    font-size: 1.9em;
+}
+
+.services-text-color {
+    color: var(--ivory);
+}
+
+.services-pravo-img-holder {
+    height: 460px;
+}
+
+.pravo-img-1 {
+    max-width: 500px;
+    min-width: 300px;
+    -webkit-filter: brightness(1.2);
+    filter: brightness(1.2);
+    -webkit-filter: grayscale(0.4);
+    filter: grayscale(0.6);
+    -webkit-filter: sepia(2);
+    filter: sepia(2);
+}
+
+.bcg {
+    background: var(--black);
+}
+
+/* .ekspertsko-height {
+    min-height: 460px;
+} */
+
+#services .disko-img {
+    background-image: url('img/izdavastvo.jpeg');
+    background-size: cover;    
+    background-position: center center;
+    min-height: 300px;
+}
+
+/* #services .info {
+    font-size: 1.2rem;
+    padding: 1rem  0 1rem 2rem;
+} */
+
+#services .card {
+    border: solid 0 var(--black);
+}
+
+#services .card-header {
+    background-color: var(--black);
+    /*padding: 1rem 1rem;*/
+    color: var(--ivory);
+}
+
+#services .card-body {
+    background-color: var(--yellow);
+}
+
+/* Styling of Contact Footer Area */
+footer {
+    background: var(--black);
+    padding: 2rem 0;
+}
+
+footer h3 {
+    color: var(--ivory);
+    border-bottom: solid 1px #fff;
+}
+
+footer .footer-info {
+    color: var(--yellow);
+    font-size: 1.2rem;
+}
+
+.footer-info p:nth-child(1),
+.footer-info p:nth-child(2) {
+    font-size: 1.6rem;
+}
+
+.footer-info p i {
+    color: var(--ivory);
+    margin-right: .6rem;
+}
+
+.footer-info p {
+    color: var(--ivory);
+}
+
+.footer-info p:nth-child(4) i {
+    font-size: 1.5rem;
+    padding: 0 .25rem;
+}
+
+.footer-info p:nth-child(5) i {
+    font-size: 1.5rem;
+}
+
+.footer-info p:nth-child(6) i {
+    font-size: 1.4rem;
+    padding: .2rem;
+}
+
+.footer-info p.cont-info:hover,
+.footer-info p.cont-info:hover i {
+    display: inline-block;
+    color: var(--yellow);
+    cursor: pointer;
+    transition: all .4s;
+}
+
+/* .footer-info i:nth-child(3) {
+    font-size: 1.5rem;
+    color: lime;
+}
+.footer-info i:nth-child(4) {
+    color: red;
+    font-size: .5rem;
+} */
+
+footer img {
+    max-width: 10rem;
+    height: auto;
+}
+
+footer .soc-icons {
+    margin-top: 4rem;
+}
+
+footer a {
+    color: var(--ivory);
+}
+    footer a:hover {
+        color: var(--yellow);
+        transition: all .4s;
+    }
+
+/* Keyframes Animations */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-top {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-bot {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Media Queries for smaller screen sizes */
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 4rem;
+        margin-top: 2.5rem;
+    }
+
+    header h2 {
+        font-size: 2rem;
+    }
+
+    #about img {
+        max-width: 300px;
+    }
+
+    #about .about-info {
+        border-left: none;
+    }
+
+    .para-info {
+        max-width: 400px;
+    }
+
+    .parallax-1 span, .parallax-2 span{
+        font-size: 4rem;
+    }
+
+    #services h4::before {
+        top: 4.8rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    /* html {
+        font-size: 12px;
+    } */
+
+    header h1 {
+        font-size: 3rem;
+        margin-top: 0;
+    }
+
+    header h2 {
+        font-size: 1.5rem;
+    }
+
+    #about img {
+        max-width: 250px;
+    }
+
+    .para-info {
+        max-width: 300px;
+    }
+
+    .parallax-1 span, .parallax-2 span {
+        font-size: 3rem;
+    }
+
+    #services h4::before {
+        top: 5.6rem;
+    }
+}
