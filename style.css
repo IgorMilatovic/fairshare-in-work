@@ -306,7 +306,7 @@ section h3, footer h3 {
     filter: brightness(1.2);
     -webkit-filter: grayscale(0.4);
     filter: grayscale(0.6);
-    -webkit-filter: sepia(2);
+    -webkit-filter: sepia(1.5);
     filter: sepia(2);
 }
 
