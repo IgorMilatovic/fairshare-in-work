@@ -557,5 +557,11 @@ footer a {
 }
 
 .aboutyellow {
-        color: var(--yellow);
-    }
+    color: var(--yellow);
+    font-size: inherit;
+}
+
+span.yellow {
+    color: var(--yellow);
+    font-size: 1rem !important;
+}
