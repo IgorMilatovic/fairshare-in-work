@@ -42,7 +42,7 @@ h1,h2,h3,h4 {
 .hr-black-double {
     border: 1px solid var(--black);
     border-radius: 2px;
-    max-width: 80%;
+    /*max-width: 20%;*/
     height: 2px;
 }
 
@@ -229,6 +229,10 @@ section h3, footer h3 {
     padding: 0 2rem;
 }
 
+.title-usluge {
+    height: 100px;
+}
+
 #services h3 {
     color: var(--black);
     font-size: 3.7em;
@@ -294,6 +298,8 @@ section h3, footer h3 {
 
 .services-text-color {
     color: var(--ivory);
+    letter-spacing: 1px;
+    font-weight: 100;
 }
 
 .services-pravo-img-holder {
@@ -533,3 +539,18 @@ footer a {
         top: 5.6rem;
     }
 }
+
+@media only screen and (max-width: 450px) {
+    nav button.navbar-toggler {
+        margin-right: 1rem !important;
+    }
+
+    .brand-span {
+        margin-left: -2rem;
+    }
+}
+
+
+
+
+

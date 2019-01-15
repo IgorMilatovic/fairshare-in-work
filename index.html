@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="en/sr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fair Share</title>
-    <meta name="description" content"">
     <!-- Bootstrap CDN link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- Google Font link - Oswald -->
-    <link href="https://fonts.googleapis.com/css?family=Oswald:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400" rel="stylesheet">
     <!-- Font Awesome CDN link -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
 </head>
-<body>
 
-    <!-- Navbar -->
+<body>
     <nav id="navbar" class="container-fluid navbar navbar-expand-lg navbar-light px-1 py-0">
         <div class="container-fluid">
-            <a class="navbar-brand ml-5 pl-4" href="#">
+            <a class="navbar-brand ml-0 ml-sm-5 pl-4" href="#">
                 <img class="mr-3" src="img/logo-sm.jpg" alt="">
-                <span>Fair Share</span>
+                <span class="brand-span">Fair Share</span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-                
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav ml-auto mt-2 mx-5 pl-5 mt-lg-0">
                     <li class="nav-item mx-4">
@@ -44,18 +43,14 @@
         </div>
     </nav>
     <!-- End of Navbar -->
-
     <!-- Start of header with title and subtitle -->
     <header class="container-fluid pl-5 pt-5">
         <h1>Fair Share</h1>
         <h2>Music Copyright Management</h2>
     </header>
     <!-- End of header area -->
-    
-    <!-- Start of Main content area -->
+    <!-- Start of main content area -->
     <main class="mt-5">
-
-        <!-- About section -->
         <section id="about" class="about container my-5 py-5">
             <h3 class="text-center pb-2">About</h3>
             <hr class="hr-ivory">
@@ -67,173 +62,170 @@
             </div>
         </section>
         <!-- End of about section -->
-        
-        <!-- Parallax 1 -->
-        <div class="parallax-1 d-flex flex-column justify-content-end align-items-center">
+        <div class="parallax-1 d-flex flex-column justify-content-end align-items-center text-center">
+            <!-- div for parallax background image -->
             <span>Lorem ipsum dolor sit.</span>
             <div class="container para-info d-flex flex-column justify-content-center align-items-center">
                 <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores cumque corrupti blanditiis eligendi, id nam vero fugit repellat voluptatum odio velit alias consequuntur minima incidunt reiciendis explicabo magnam</p>
             </div>
-            <button href="#">Ajmo dalje</button>
+            <button class="wow fadeIn" data-wow-delay="" data-wow-duration="1s"" href="#">Ajmo dalje</button>
         </div>
-        <!-- End of Parallax 1 -->
-        
-        <!-- Services 1 -->
-            <!-- PRAVO -->
         <section id="services" class="container-fluid pt-5">
-            <h3 class="text-center mt-5">Usluge</h3>
+            <h3 class="text-center mt-5 title-usluge">Usluge</h3>
             <hr class="mb-5 hr-black-double">
             <div class="dummy h-25 mb-5"></div>
             <div class="dummy h-25"></div>
-
-            <!-- Hammer icon -->
             <div class="col-12">
                 <h4 class="mt-5 text-center">
                     <span class="pravo-title"><img class="service-ikona-pravo" src="img/icon-pravo.png" alt="ikona sudijski cekic"></span>
                 </h4>
             </div>
-
             <div class="row">
                 <div class="col-12 col-lg-8">
                     <div class="row my-4 bcg">
                         <div class="col-12 mb-3 mb-lg-0 col-lg-5 p-3">
-                            <div class="pravo-img-1 bcg p-2 text-center mx-auto">
-                                <img class="img-fluid" src="img/manuell1.jpg" alt="">
+                            <div class="pravo-img-1 bcg p-2 text-center mx-auto ">
+                                <img class="img-fluid " src="img/manuell1.jpg" alt="">
                             </div>
-                        </div>
-                        <div class="col-12 col-lg-7 pt-3 p-2">
-                            <div class="services-text-color ekspertsko-height text-center p-2">
-                                <h4 class="">Ekspertsko savetovanje</h4>
-                                <hr class="hr-ivory-double">
-                                <div class="">
-                                    <p class="p-2 text-center">Analiza cilja i raspoloživih sredstava obezbeđuje mapu sigurnih puteva dugoročnog raspolaganja intelektualnom svojinom.</p>
+                            </div>
+                            <div class="col-12 col-lg-7 pt-3 p-2">
+                                <div class="services-text-color ekspertsko-height text-center p-2">
+                                    <h4 class="">Ekspertsko savetovanje</h4>
+                                    <hr class="hr-ivory-double">
+                                    <div class="">
+                                        <p class="p-2 text-center">Analiza cilja i raspoloživih sredstava obezbeđuje mapu sigurnih puteva dugoročnog raspolaganja intelektualnom svojinom.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 div-uluge-text">
+                                <div class="div-uluge-text-content p-2">
+                                    
+                                        <h3 class="border-bottom border-light services-text-color ">KONSALTING</h3> 
+                                    <p class="services-text-color">
+                                    Bez obzira koliko mislimo da znamo, svima nam nekad treba savet stručnjaka. Stručna analiza cilja i raspoloživih sredstava obezbeđuje mapu sigurnih puteva dugoročnog raspolaganja intelektualnom svojinom. Za potrebe umetnika i drugih nosilaca autorskog i srodnih prava razvili smo nekoliko kategorija konsultacija:</p>
+                                    <p class="services-text-color">Osnovne konsultacije za one koji imaju potrebu za opštim, pouzdanim i tačnim savetima o muzičkom poslu koji nisu javno dostupni.
+                                        Konsultacije + za one sa specifičnim potrebama ili u posebnim okolnostima, kojima je potreban pouzdan i tačan savet o muzičkom poslovanju koji nije javno dostupan i za koje ne postoji obrazovni ni programi obuke.</p>
+                                        <p class="services-text-color">BESPLATNE KONSULTACIJE <br> 
+                                        pružamo umetnicima i drugim nosiocima koji su nam poverili svoje autorsko i srodna prava na upravljanje ili koji svojom muzikom učestvuju u izgradnji Baze Slobodne Muzike.</p>
+                                        <p class="services-text-color">KONSULTACIJE ZA 1000 DINARA <br>
+                                    Ne možete sebi priuštiti ni jednu od konsultantskih usluga? Ne brinite. Za samo 1000 dinara možete postaviti jedno pitanje na koje ćemo direktno i u potpunosti odgovoriti, u najkraćem mogućem roku (u slučaju potrebe pitanje se dostavlja nekolicini pridruženih stručnjaka)</p>
+                                    <hr style="background: ivory;">
+                                    <p class="services-text-color">1.2 UGOVORI ŠTA POTPISUJEM?
+                                        1.2.1 Saznajte šta zaista piše u svakom muzičkom ugovoru. Fair Share je sigurno utočište za iskreno ispitivanje bilo kog dogovora koji se tiče autora, izvođača, producenta, menadžera, izdavača. Za manje od cene jednog sata razgovora sa advokatom, Fair Share će sačiniti pisanu poslovnu analizu ugovora ili održati telekonferenciju sa klijentom.
+                                        1.2.2 Napravite jednostavan i fer (fair share) i stabilan dogovor. Bez glavobolje zbog ugovora na velikom broju strana i sitno kucanog teksta. Fair Share je razvio sopstveni metod struktuiranja osnovnih poslova u muzičkoj industriji koji je lak za razumevanje i administraciju, i koji uspešno koriste mnogi umetnici, producenti i izdavači. Ovom konsultacijom dobićete stručnu edukaciju u vezi sa vašim muzičkim poslovima i tačno saznati kako mogu da rade za vas. Usluga uključuje, ako je potrebno, upoznavanje sa vrhunskim advokatom. Ravnoteža prava i obaveza po Fair Share načelu izrade ugovora obezbeđuje stabilan poslovni odnos.</p>
+                                    <hr style="background: ivory;">
+                                    <p class="services-text-color">1.2.3 NEZAVISNA NEPRISTRASNA ANALIZA BILO KOG MUZIČKOG UGOVORA Ova usluga vam obezbeđuje dvodelni pisan izveštaj koji analizira sve bitne stavke u ugovoru vašeg klijenta sa izdavačem (ili drugim korisnikom) i upoređuje ga sa drugim ugovorima (često istog izdavača), što pruža ogromnu taktičku prednost za individualce i male firme. Prvi deo je pregled i analiza dobrih strana i nedostataka ugovora. Napisan je na prostom jeziku tako da ga može razumeti i vaš klijent i tako imati značajnije učešće u procesu pregovaranja. Ne samo da će vam to uštedeti mnogo sati objašnjavanja, (koje verovatno nećete naplatiti), već će vaš klijent razviti osećaj stvarne zahvalnosti i poverenja za obrazovanje koje mu pružate. Drugi deo izveštaja je dizajniran za advokate. U njemu se razvijaju ključne klauzule ugovora i daju sugestije zasnovane na trenutnim standardima industrije i najnovijim trendovima određenog izdavača. Upućivanje na sudsku praksu je uključeno kada je to moguće.</p>
+                                    <hr style="background: ivory;">
+                                    <p class="services-text-color">1.2.4 PRAVNO UREĐENO PARTNERSTVO ZA MUZIČKU GRUPU Kada dva ili više kreativnih subjekata žele ili treba da formiraju partnerstvo Razumemo probleme pri razlazu benda i inherentni stres kad treba da se podeli intelektualna svojina - naziv, logotip, autorsko i srodna prava, tantijeme i ostalo. Nudimo specifičnu konsultaciju o partnerstvu: sastaćemo se sa celom grupom i izraditi celokupnu podelu i udele. Iz ove prve faze, u kojoj se može očekivati napetost, advokat je izostavljen. Na narednim sastancima, ako su potrebni, uključeno je upoznavanje sa vrhunskim advokatom. Advokatima čiji klijent je cela muzička grupa ili produkcioni tim, zbog čega može doći do sukoba interesa, da bi se ublažio pritisak, nudimo neutralnog predstavnika koji se sastaje nezavisno sa svim članovima osnivačkog entiteta. Fair Share će rešiti podelu i udele u autorskom, srodnim i drugim pravima intelektualne svojine, dok advokat ostaje izvan “poprišta” i sačinjava ugovor o partnerstvu.</p>
+                                    <hr style="background: ivory;">
+                                    <!-- <p class="services-text-color">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste 
+                            </p>
+                            <hr style="background: ivory;">
+                            <p class="services-text-color">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste 
+                            </p> -->
                                 </div>
                             </div>
                         </div>
-                         <div class="col-12 div-uluge-text">
-                            <div class="div-uluge-text-content p-2">
-                            <p class="services-text-color">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste 
-                            </p>
-                            <hr style="background: ivory;">
-                            <p class="services-text-color">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste 
-                            </p>
-                            <hr style="background: ivory;">
-                            <p class="services-text-color">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste 
-                            </p>
-                        </div>
-                        </div>
                     </div>
                 </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-12 col-lg-8 mx-auto">
-                    <div class="row my-4 bcg">
-                        <div class="col-12 mb-3 mb-lg-0 col-lg-5 p-3">
-                            <div class="pravo-img-1 bcg p-2 text-center mx-auto">
-                                <img class="img-fluid" src="img/dugme1.jpg" alt="">
+                <hr>
+                <div class="row">
+                    <div class="col-12 col-lg-8 mx-auto">
+                        <div class="row my-4 bcg">
+                            <div class="col-12 mb-3 mb-lg-0 col-lg-5 p-3">
+                                <div class="pravo-img-1 bcg p-2 text-center mx-auto">
+                                    <img class="img-fluid" src="img/dugme1.jpg" alt="">
                             </div>
-                        </div>
-                        <div class="col-12 col-lg-7 pt-3 pl-4">
-                            <div class="services-text-color ekspertsko-height text-center p-2">
-                                <h4 class="">Posredovanje i zastupanje</h4>
-                                <hr class="hr-ivory-double">
-                                <div class="">
-                                    <p class="">Dovođenje u vezu zainteresovanih lica ćesto je dovoljno za uspešan posao. Zastupanje u pregovorima i prilikom ugovaranja obezbedjuje pravilno izvršenje ugovorenog.</p>
-                                    <hr class="hr-ivory w-25">
-                                    <p class="">Zastupanje u pregovorima i prilikom ugovaranja obezbedjuje pravilno izvršenje ugovorenog.</p>
+                                </div>
+                                <div class="col-12 col-lg-7 pt-3 pl-4">
+                                    <div class="services-text-color ekspertsko-height text-center p-2">
+                                        <h4 class="">Posredovanje i zastupanje</h4>
+                                        <hr class="hr-ivory-double">
+                                        <div class="">
+                                            <p class="">Dovođenje u vezu zainteresovanih lica ćesto je dovoljno za uspešan posao. Zastupanje u pregovorima i prilikom ugovaranja obezbedjuje pravilno izvršenje ugovorenog.</p>
+                                            <hr class="hr-ivory w-25">
+                                            <p class="">Zastupanje u pregovorima i prilikom ugovaranja obezbedjuje pravilno izvršenje ugovorenog.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 div-uluge-text">
+                                    <div class="div-uluge-text-content p-2">
+                                        <p class="services-text-color">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste
+                                        </p>
+                                        <hr style="background: ivory;">
+                                        <p class="services-text-color">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste
+                                        </p>
+                                        <hr style="background: ivory;">
+                                        <p class="services-text-color">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                         <div class="col-12 div-uluge-text">
-                            <div class="div-uluge-text-content p-2">
-                            <p class="services-text-color">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste 
-                            </p>
-                            <hr style="background: ivory;">
-                            <p class="services-text-color">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste 
-                            </p>
-                            <hr style="background: ivory;">
-                            <p class="services-text-color">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste 
-                            </p>
-                        </div>
-                        </div>
                     </div>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-12 col-lg-8 ml-0 ml-lg-auto">
-                    <div class="row my-4 bcg">
-                        <div class="col-12 mb-3 mb-lg-0 col-lg-5 p-3">
-                            <div class="pravo-img-1 bcg p-2 text-center mx-auto">
-                                <img class="img-fluid" src="img/play1.jpg" alt="">
+                    <hr>
+                    <div class="row">
+                        <div class="col-12 col-lg-8 ml-0 ml-lg-auto">
+                            <div class="row my-4 bcg">
+                                <div class="col-12 mb-3 mb-lg-0 col-lg-5 p-3">
+                                    <div class="pravo-img-1 bcg p-2 text-center mx-auto">
+                                        <img class="img-fluid" src="img/play1.jpg" alt="">
                             </div>
-                        </div>
-                        <div class="col-12 col-lg-7 pt-3 pl-4">
-                            <div class="services-text-color ekspertsko-height text-center p-2">
-                                <h4 class="">Izrada ugovora</h4>
-                                <hr class="hr-ivory-double">
-                                <div class="">
-                                    <p class="p-2 text-center">Ravnoteža prava i obaveza po Fair Share načelu izrade ugovora obezbeđuje stabilan poslovni odnos. Sve vrste ugovora u oblasti diskografije izrađujemo i prema potrebama naručilaca.</p>
-                                    <hr class="hr-ivory w-25">
-                                    <p class="p-2 text-center">Sve vrste ugovora u oblasti diskografije izrađujemo i prema potrebama naručilaca.</p>
+                                    </div>
+                                    <div class="col-12 col-lg-7 pt-3 pl-4">
+                                        <div class="services-text-color ekspertsko-height text-center p-2">
+                                            <h4 class="">Izrada ugovora</h4>
+                                            <hr class="hr-ivory-double">
+                                            <div class="">
+                                                <p class="p-2 text-center">Ravnoteža prava i obaveza po Fair Share načelu izrade ugovora obezbeđuje stabilan poslovni odnos. Sve vrste ugovora u oblasti diskografije izrađujemo i prema potrebama naručilaca.</p>
+                                                <hr class="hr-ivory w-25">
+                                                <p class="p-2 text-center">Sve vrste ugovora u oblasti diskografije izrađujemo i prema potrebama naručilaca.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 div-uluge-text">
+                                        <div class="div-uluge-text-content p-2">
+                                            <p class="services-text-color">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste
+                                            </p>
+                                            <hr style="background: ivory;">
+                                            <p class="services-text-color">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste
+                                            </p>
+                                            <hr style="background: ivory;">
+                                            <p class="services-text-color">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                         <div class="col-12 div-uluge-text">
-                            <div class="div-uluge-text-content p-2">
-                            <p class="services-text-color">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste 
-                            </p>
-                            <hr style="background: ivory;">
-                            <p class="services-text-color">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste 
-                            </p>
-                            <hr style="background: ivory;">
-                            <p class="services-text-color">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste 
-                            </p>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <hr>
-
+                        <hr>
         </section>
-        <!--End of Services 1 -->
-
-        <!-- Paralax 2 -->
+        <!-- DISKOGRAFIJA -->
         <div class="parallax-2">
             <!-- div for parallax background image -->
             <!-- <span>Lorem ipsum dolor sit.</span> -->
             <!-- <div class="container para-info d-flex flex-column justify-content-center align-items-center">
-                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores cumque corrupti blanditiis eligendi, id nam vero fugit repellat voluptatum odio velit alias consequuntur minima incidunt reiciendis explicabo magnam</p>
-            </div>
-            <button href="#">Saznajte više</button> -->
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores cumque corrupti blanditiis eligendi, id nam vero fugit repellat voluptatum odio velit alias consequuntur minima incidunt reiciendis explicabo magnam</p>
+                </div>
+                <button href="#">Saznajte više</button> -->
         </div>
-
-        <!-- Services 2 -->
-            <!-- PRAVO -->
         <section id="services" class="container-fluid pt-5">
             <!-- <div class="text-center">
                 <img class="service-ikona-disco" src="img/icon-diskografija.png" alt="ikona diskografija">
             </div> -->
-
-            <!-- Disc icon -->
             <div class="col-12">
                 <h4 class="mt-5 text-center">
                     <span class="pravo-title"><img class="service-ikona-pravo" src="img/icon-diskografija.png" alt="ikona sudijski cekic"></span>
                 </h4>
             </div>
-            
             <div class="row">
                 <div class="col-12 col-lg-8 ml-0 ml-lg-auto">
                     <div class="row my-4 bcg">
@@ -241,131 +233,125 @@
                             <div class="pravo-img-1 bcg p-2 text-center mx-auto">
                                 <img class="img-fluid" src="img/mix1.jpg" alt="">
                             </div>
-                        </div>
-                        <div class="col-12 col-lg-7 pt-3 pl-4">
-                            <div class="services-text-color ekspertsko-height text-center p-2">
-                                <h4 class="p-2 text-center">Upravljanje autorskim i srodnim pravima</h4>
-                                <hr class="hr-ivory-double">
-                                <div class="">
-                                    <p class="p-2 text-center">Administriranje (prijava, ažuriranje podataka, kontrola korišćenja i raspodela naknade) u organizacijama za kolektivno ostvarivanje.</p>
-                                    <hr class="hr-ivory w-25">
-                                    <p class="p-2 text-center">Administracija u individualnom ostvarivanju prava - adaptacije, prevodi, sinhronizacijske dozvole, produkciona muzika, itd.</p>
-                                    <hr class="hr-ivory w-25">
-                                    <p class="p-2 text-center">Klijent - nosilac autorskog i srodnih prava zadržava punu kontrolu nad svojim pravima</p>
+                            </div>
+                            <div class="col-12 col-lg-7 pt-3 pl-4">
+                                <div class="services-text-color ekspertsko-height text-center p-2">
+                                    <h4 class="p-2 text-center">Upravljanje autorskim i srodnim pravima</h4>
+                                    <hr class="hr-ivory-double">
+                                    <div class="">
+                                        <p class="p-2 text-center">Administriranje (prijava, ažuriranje podataka, kontrola korišćenja i raspodela naknade) u organizacijama za kolektivno ostvarivanje.</p>
+                                        <hr class="hr-ivory w-25">
+                                        <p class="p-2 text-center">Administracija u individualnom ostvarivanju prava - adaptacije, prevodi, sinhronizacijske dozvole, produkciona muzika, itd.</p>
+                                        <hr class="hr-ivory w-25">
+                                        <p class="p-2 text-center">Klijent - nosilac autorskog i srodnih prava zadržava punu kontrolu nad svojim pravima</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 div-uluge-text">
+                                <div class="div-uluge-text-content p-2">
+                                    <p class="services-text-color">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste
+                                    </p>
+                                    <hr style="background: ivory;">
+                                    <p class="services-text-color">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste
+                                    </p>
+                                    <hr style="background: ivory;">
+                                    <p class="services-text-color">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                         <div class="col-12 div-uluge-text">
-                            <div class="div-uluge-text-content p-2">
-                            <p class="services-text-color">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste 
-                            </p>
-                            <hr style="background: ivory;">
-                            <p class="services-text-color">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste 
-                            </p>
-                            <hr style="background: ivory;">
-                            <p class="services-text-color">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste 
-                            </p>
-                        </div>
-                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <hr>
-
-            <div class="row">
-                <div class="col-12 col-lg-8 mx-auto">
-                    <div class="row my-4 bcg">
-                        <div class="col-12 mb-3 mb-lg-0 col-lg-5 p-3">
-                            <div class="pravo-img-1 bcg p-2 text-center mx-auto">
-                                <img class="img-fluid drum-img" src="img/indi1.jpg" alt="">
+                <hr>
+                <div class="row">
+                    <div class="col-12 col-lg-8 mx-auto">
+                        <div class="row my-4 bcg">
+                            <div class="col-12 mb-3 mb-lg-0 col-lg-5 p-3">
+                                <div class="pravo-img-1 bcg p-2 text-center mx-auto">
+                                    <img class="img-fluid drum-img" src="img/indi1.jpg" alt="">
                             </div>
-                        </div>
-                        <div class="col-12 col-lg-7 pt-3 pl-4">
-                            <div class="services-text-color ekspertsko-height text-center p-2">
-                                <h4 class="p-2 text-center">Izdavaštvo</h4>
-                                <hr class="hr-ivory-double">
-                                <div class="">
-                                    <p class="p-2 text-center">Izdavanje fonograma digitalno i na čvrstim nosačima (CD, vinyl)</p>
-                                    <hr class="hr-ivory w-25">
-                                    <p class="p-2 text-center">Izdavanje muzičkih dela - publishing.</p>
-                                    <hr class="hr-ivory w-25">
-                                    <p class="p-2 text-center">Izdavanje online i štampanih produkcija.</p>
+                                </div>
+                                <div class="col-12 col-lg-7 pt-3 pl-4">
+                                    <div class="services-text-color ekspertsko-height text-center p-2">
+                                        <h4 class="p-2 text-center">Izdavaštvo</h4>
+                                        <hr class="hr-ivory-double">
+                                        <div class="">
+                                            <p class="p-2 text-center">Izdavanje fonograma digitalno i na čvrstim nosačima (CD, vinyl)</p>
+                                            <hr class="hr-ivory w-25">
+                                            <p class="p-2 text-center">Izdavanje muzičkih dela - publishing.</p>
+                                            <hr class="hr-ivory w-25">
+                                            <p class="p-2 text-center">Izdavanje online i štampanih produkcija.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 div-uluge-text">
+                                    <div class="div-uluge-text-content p-2">
+                                        <p class="services-text-color">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste
+                                        </p>
+                                        <hr style="background: ivory;">
+                                        <p class="services-text-color">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste
+                                        </p>
+                                        <hr style="background: ivory;">
+                                        <p class="services-text-color">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 div-uluge-text">
-                            <div class="div-uluge-text-content p-2">
-                            <p class="services-text-color">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste 
-                            </p>
-                            <hr style="background: ivory;">
-                            <p class="services-text-color">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste 
-                            </p>
-                            <hr style="background: ivory;">
-                            <p class="services-text-color">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste 
-                            </p>
-                        </div>
-                        </div>
                     </div>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-12 col-lg-8">
-                    <div class="row my-4 bcg">
-                        <div class="col-12 mb-3 mb-lg-0 col-lg-5 p-3">
-                            <div class="pravo-img-1 bcg p-2 text-center mx-auto">
-                                <img class="img-fluid" src="img/drum-ver3-temp.jpg" alt="">
+                    <hr>
+                    <div class="row">
+                        <div class="col-12 col-lg-8">
+                            <div class="row my-4 bcg">
+                                <div class="col-12 mb-3 mb-lg-0 col-lg-5 p-3">
+                                    <div class="pravo-img-1 bcg p-2 text-center mx-auto">
+                                        <img class="img-fluid" src="img/drum-ver3-temp.jpg" alt="">
                             </div>
-                        </div>
-                        
-                        <div class="col-12 col-lg-7 pt-3 p-2">
-                            <div class="services-text-color ekspertsko-height text-center p-2">
-                                <h4 class="p-2 text-center">Obuke za samostalno upravljanje autorskim i srodnim pravima</h4>
-                                <hr class="hr-ivory-double">
-                                <div class="">
-                                    <p class="p-2 text-center">Nosilaca prava i korisnika.</p>
+                                    </div>
+                                    <div class="col-12 col-lg-7 pt-3 p-2">
+                                        <div class="services-text-color ekspertsko-height text-center p-2">
+                                            <h4 class="p-2 text-center">Obuke za samostalno upravljanje autorskim i srodnim pravima</h4>
+                                            <hr class="hr-ivory-double">
+                                            <div class="">
+                                                <p class="p-2 text-center">Nosilaca prava i korisnika.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 div-uluge-text">
+                                        <div class="div-uluge-text-content p-2">
+                                            <p class="services-text-color">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste
+                                            </p>
+                                            <hr style="background: ivory;">
+                                            <p class="services-text-color">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste
+                                            </p>
+                                            <hr style="background: ivory;">
+                                            <p class="services-text-color">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                         <div class="col-12 div-uluge-text">
-                            <div class="div-uluge-text-content p-2">
-                            <p class="services-text-color">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste 
-                            </p>
-                            <hr style="background: ivory;">
-                            <p class="services-text-color">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste 
-                            </p>
-                            <hr style="background: ivory;">
-                            <p class="services-text-color">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere labore nemo, laudantium dolores delectus! Aspernatur, error, minima. Rerum vitae neque obcaecati vero, placeat voluptatibus cum laudantium odio consequuntur officia nihil, error, qui quaerat. Excepturi iste aperiam soluta, quo natus, aliquid facere quod, aspernatur sunt id quas, porro. Nam repudiandae perferendis provident magnam in enim sed velit laborum sunt! Voluptas fugiat incidunt ipsam, sint enim, quo, temporibus ratione, rerum necessitatibus autem iste 
-                            </p>
-                        </div>
-                        </div>
+                        <hr>
                     </div>
                 </div>
-            </div> 
-
-            <hr>
-
         </section>
-        <!--End of Services 2 -->
-
     </main>
     <!-- End of main content area -->
-
-    <!-- Start of Contact-Footer Area -->
+    <!-- Start of Contact Footer Area -->
     <footer id="contact" class="container-fluid p-5">
         <div class="footer-info container">
             <h3 class="text-center pt-5 pb-2">Kontakt</h3>
-            <div class="row pt-5">                
+            <div class="row pt-5">
                 <div class="col-md-12 col-lg-4 mb-5 pl-3 d-flex justify-content-center">
                     <div class="d-inline-block text-center text-lg-left">
                         <p class="">Music Copyright Management</p>
@@ -379,34 +365,34 @@
                 <div class="col-md-12 col-lg-4 text-center my-3">
                     <img src="img/logo.jpg" alt="">
                 </div>
-                <div class="col-md-12 col-lg-4">
-                    <div class="row soc-icons text-center my-5">
-                        <div class="col-4">
-                            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="row soc-icons text-center my-5">
+                            <div class="col-4">
+                                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                            </div>
                         </div>
-                        <div class="col-4">
-                            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-                        </div>
-                        <div class="col-4">
-                            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-                        </div>
-                    </div>                                     
+                    </div>
                 </div>
             </div>
-        </div>
     </footer>
     <!-- <div class="text-center text-light display-5 p-4" style="background: #000;">Copyright 2018 &copy; FairShare</div> -->
-
     <!-- End of Contact Footer -->
-
-    
     <!-- Bootstrap JS CDN script link -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <!-- Custom jS -->
     <script src="script.js"></script>
+    <script src="proba.js"></script>
+    <script src="wow.min.js"></script>
+    <script>new WOW().init();</script>
 </body>
+
 </html>
