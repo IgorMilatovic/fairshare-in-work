@@ -494,6 +494,8 @@ footer a {
         border-left: none;
     }
 
+    
+
     .para-info {
         max-width: 400px;
     }
@@ -537,3 +539,6 @@ footer a {
         top: 5.6rem;
     }
 }
+.aboutyellow {
+        color: var(--yellow);
+    }
