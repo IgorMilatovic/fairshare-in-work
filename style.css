@@ -293,6 +293,8 @@ section h3, footer h3 {
 
 .services-text-color {
     color: var(--ivory);
+    letter-spacing: 1px;
+    font-weight: 100;
 }
 
 .services-pravo-img-holder {
