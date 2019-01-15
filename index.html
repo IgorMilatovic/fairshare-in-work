@@ -12,15 +12,17 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:400" rel="stylesheet">
     <!-- Font Awesome CDN link -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
 </head>
 
 <body>
     <nav id="navbar" class="container-fluid navbar navbar-expand-lg navbar-light px-1 py-0">
         <div class="container-fluid">
-            <a class="navbar-brand ml-5 pl-4" href="#">
+            <a class="navbar-brand ml-0 ml-sm-5 pl-4" href="#">
                 <img class="mr-3" src="img/logo-sm.jpg" alt="">
-                <span>Fair Share</span>
+                <span class="brand-span">Fair Share</span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -60,16 +62,16 @@
             </div>
         </section>
         <!-- End of about section -->
-        <div class="parallax-1 d-flex flex-column justify-content-end align-items-center">
+        <div class="parallax-1 d-flex flex-column justify-content-end align-items-center text-center">
             <!-- div for parallax background image -->
             <span>Lorem ipsum dolor sit.</span>
             <div class="container para-info d-flex flex-column justify-content-center align-items-center">
                 <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores cumque corrupti blanditiis eligendi, id nam vero fugit repellat voluptatum odio velit alias consequuntur minima incidunt reiciendis explicabo magnam</p>
             </div>
-            <button href="#">Ajmo dalje</button>
+            <button class="wow fadeIn" data-wow-delay="" data-wow-duration="1s"" href="#">Ajmo dalje</button>
         </div>
         <section id="services" class="container-fluid pt-5">
-            <h3 class="text-center mt-5">Usluge</h3>
+            <h3 class="text-center mt-5 title-usluge">Usluge</h3>
             <hr class="mb-5 hr-black-double">
             <div class="dummy h-25 mb-5"></div>
             <div class="dummy h-25"></div>
@@ -82,8 +84,8 @@
                 <div class="col-12 col-lg-8">
                     <div class="row my-4 bcg">
                         <div class="col-12 mb-3 mb-lg-0 col-lg-5 p-3">
-                            <div class="pravo-img-1 bcg p-2 text-center mx-auto">
-                                <img class="img-fluid" src="img/manuell1.jpg" alt="">
+                            <div class="pravo-img-1 bcg p-2 text-center mx-auto ">
+                                <img class="img-fluid " src="img/manuell1.jpg" alt="">
                             </div>
                             </div>
                             <div class="col-12 col-lg-7 pt-3 p-2">
@@ -388,6 +390,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
+    <script src="proba.js"></script>
+    <script src="wow.min.js"></script>
+    <script>new WOW().init();</script>
 </body>
 
 </html>
