@@ -188,13 +188,17 @@ section h3, footer h3 {
 
 .parallax-1 span, .parallax-2 span{
     color: var(--yellow);
-    font-size: 5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
     text-shadow:
                -2px -2px 0 var(--black),  
                 2px -2px 0 var(--black),
                -2px 2px 0 var(--black),
                 2px 2px 0 var(--black);
+}
+
+details > summary:first-of-type {
+    list-style-type: none;
 }
 
 .para-info {
@@ -496,6 +500,8 @@ footer a {
         border-left: none;
     }
 
+    
+
     .para-info {
         max-width: 400px;
     }
@@ -550,7 +556,6 @@ footer a {
     }
 }
 
-
-
-
-
+.aboutyellow {
+        color: var(--yellow);
+    }
