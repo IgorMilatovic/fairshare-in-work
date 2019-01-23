@@ -574,3 +574,48 @@ dt + dd {
 dt {
     padding: 15px 0 0;
 }
+
+.box {
+    box-sizing: border-box;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*grid-template-rows: repeat(10, 1fr);*/
+    /*grid-template-rows: repeat(auto-fit, minmax(15px, 1fr));*/
+    grid-gap: 40px;
+    /*align-items: start;*/
+    align-content: start;
+    grid-auto-flow: dense;
+
+}
+.box * {
+    background-color: var(--black);
+    padding: 10px;
+}
+.pub_gen {
+    grid-column: span 2;
+    grid-row: span 7;
+}
+.pub_img,
+.pub_hard {
+    /*grid-row: span 1;*/
+    grid-row: span 3;
+    /*align-self: start;*/
+}
+
+.pub_pub,
+.pub_admin {
+    /*grid-row: span 2;*/
+    grid-row: span 5;
+    /*align-self: start;*/
+}
+.pub_digit {
+    grid-row: span 6;
+}
+@media only screen and (min-width: 900px) {
+    .pub_pub {
+        grid-row:span 4;
+    }
+    .pub_gen {
+        grid-row: span 6;
+    }
+}
