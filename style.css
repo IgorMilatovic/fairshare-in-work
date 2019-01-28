@@ -584,57 +584,43 @@ dt {
     box-sizing: border-box;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    /*grid-template-rows: repeat(10, 1fr);
-    grid-template-rows: repeat(auto-fit, minmax(15px, 1fr));*/
-    /*grid-gap: 40px;*/
-    /*align-items: start;*/
+    border: 1px solid var(--yellow);
     align-content: start;
     grid-auto-flow: dense;
+}
 
-}/*
-.box * {
-    background-color: var(--black);
-    padding: 10px;
-}*/
-.publishing {
+.box_big,
+.img_box,
+.box_text,
+.box_tall {
     border: 1px solid var(--yellow);
 }
-.pub_gen,
-.pub_img,
-.pub_hard,
-.pub_pub,
-.pub_admin,
-.pub_digit {
-    border: 1px solid var(--yellow);
-}
-.pub_gen {
+.box_big {
     grid-column: span 2;
     grid-row: span 2;
     padding: 20px;
     display: grid;
     align-content: center;
+}
+.box_yellow {
     background-color: var(--yellow);
     color: var(--black) !important;
 }
-.pub_img,
-.pub_hard {
+.img_box {
     grid-row: span 1;
 }
 
-.pub_pub {
-    padding: 20px;
-}
-.pub_digit {
+.box_text {
     padding: 20px;
     align-content: center;
     display: grid;
 }
-.pub_admin {
+
+.img_text {
     position: relative;
-    /**/
 }
 
-.pub_admin_tit {
+.box_tit {
     position: absolute;
     background-color: var(--black);
     bottom: 0;
@@ -646,34 +632,16 @@ dt {
     display: inline-block;
     opacity: 0.8;
 }
-/*.pub_admin_tit:hover {
-    display: inline-block;
-}*/
-.exp_img,
-.exp_intro,
-.exp_tall,
-.exp_ug {
-    border: 1px solid var(--yellow);
+
+.box_tall {
+    /*border: 1px solid var(--yellow);*/
+    display: grid;
     align-content: center; 
-}
-.exp_img {
-    /*grid-column: span 2;*/
-   /* grid-template-columns: repeat(2, 1fr);*/
-}
-.exp_img {
-    grid-column: 2/3;
-}
-.exp_intro {
-    grid-column: 1/2;
-}
-.exp_tall {
     grid-row: span 2;
-    grid-column: 3/4;
+    grid-column: span 1;
     padding: 20px;
 }
-.exp_ug {
-    padding: 20px;
-}
+
 
 @media only screen and (min-width: 900px) {
     .pub_pub {
@@ -682,4 +650,4 @@ dt {
     .pub_gen {
         grid-row: span 5;
     }
-}*/
+}
