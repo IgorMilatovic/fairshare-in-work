@@ -612,6 +612,7 @@ dt {
 
 .box_text {
     padding: 20px;
+    grid-column: span 1;
     align-content: center;
     display: grid;
 }
@@ -640,6 +641,10 @@ dt {
     grid-row: span 2;
     grid-column: span 1;
     padding: 20px;
+}
+
+.box_xlong {
+    grid-column: span 3;
 }
 
 
