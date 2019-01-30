@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Life+Savers|Love+Ya+Like+A+Sister');
+
 /* just for test */
 :root {
     --yellow: #fdd325;
@@ -562,7 +564,7 @@ footer a {
     font-size: inherit;
 }
 
-span.yellow {
+.yellow {
     color: var(--yellow);
     font-size: 1rem !important;
 }
@@ -645,6 +647,15 @@ dt {
 
 .box_xlong {
     grid-column: span 3;
+}
+.box_font {
+    font-family: 'Life Savers', cursive;
+    
+    font-size: 1rem !important;
+    font-weight: bold;
+}
+.black {
+    color: var(--black) !important;
 }
 
 
