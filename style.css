@@ -657,6 +657,7 @@ dt {
     padding: 20px;
 }
 .box_xlong {
+    position: relative;
     grid-column: span 3;
 }
 
