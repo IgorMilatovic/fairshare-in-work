@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Life+Savers|Love+Ya+Like+A+Sister');
+@import url('https://fonts.googleapis.com/css?family=Caveat:400,700&subset=latin-ext');
 
 /* just for test */
 :root {
@@ -300,7 +300,7 @@ details > summary:first-of-type {
 
 #services span {
     color: var(--yellow);
-    font-size: 1.9em;
+    /*font-size: 1.9em;*/
 }
 
 .services-text-color {
@@ -566,7 +566,7 @@ footer a {
 
 .yellow {
     color: var(--yellow);
-    font-size: 1rem !important;
+    /*font-size: 1rem !important;*/
 }
 .manydots {
     color: var(--yellow);
@@ -649,10 +649,10 @@ dt {
     grid-column: span 3;
 }
 .box_font {
-    font-family: 'Life Savers', cursive;
+    font-family: 'Caveat', cursive;
     
-    font-size: 1rem !important;
-    font-weight: bold;
+    font-size: 1.2rem !important;
+    font-weight: 700;
 }
 .black {
     color: var(--black) !important;
