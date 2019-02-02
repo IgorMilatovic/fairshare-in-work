@@ -660,7 +660,10 @@ dt {
     position: relative;
     grid-column: span 3;
 }
-
+h2 {
+    width: 90%;
+    margin: auto;
+}
 
 
 
