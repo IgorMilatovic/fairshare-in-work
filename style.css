@@ -180,7 +180,7 @@ h1 {
   font-family: 'Impact';
   color: ivory;
   border-bottom: 1px solid var(--ivory);
-  margin: 100px auto;
+  margin: auto auto 100px;
 }
 
 h2 {
@@ -342,10 +342,6 @@ footer a:hover {
   .parallax-1 span, .parallax-2 span {
     font-size: 3rem;
   }
-
-  #services h4::before {
-    top: 5.6rem;
-  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -498,4 +494,19 @@ dt {
     width: 90%;
     margin: auto;
   }  
+}
+
+/*  mob nav  */
+
+nav .navbar-brand {
+  text-transform: uppercase;
+  font-family: 'Impact', sans-serif;
+  letter-spacing: 4px;
+  font-size: 1.6rem;
+}
+
+nav button.navbar-toggler {
+  margin-right: 4rem;
+  border: solid 2px var(--black) !important;
+  border-radius: 4px;
 }

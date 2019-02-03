@@ -62,12 +62,12 @@ h1,h2,h3,h4 {
     transition: top 0.3s;
 }*/
 
-nav .navbar-brand {
+/*nav .navbar-brand {
     text-transform: uppercase;
     font-family: 'Impact', sans-serif;
     letter-spacing: 4px;
     font-size: 1.6rem;
-}
+}*/
 /*
 nav .navbar-brand span {
     position: relative;
@@ -101,11 +101,11 @@ nav ul li {
     text-shadow: -1px -1px 0 var(--black), 1px -1px 0 var(--black), -1px 1px 0 var(--black), 1px 1px 0 var(--black);
 }*/
 
-nav button.navbar-toggler {
+/*nav button.navbar-toggler {
     margin-right: 4rem;
     border: solid 2px var(--black) !important;
     border-radius: 4px;
-}
+}*/
 
 /* Styling of header */
 /*header {
