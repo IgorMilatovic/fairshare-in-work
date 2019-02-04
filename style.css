@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Caveat:400,700&subset=latin-ext');
 
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+font-weight: normal;
+font-style : normal;
+       src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+       src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+}
 
 /*  basics  */
 :root {
@@ -553,7 +565,8 @@ nav button.navbar-toggler {
 }
 
 .modal-outer:before {
-  content: "X";
+  font-family: "FontAwesome";
+  content: "\f057";
   position: absolute;
   border: 2px solid var(--yellow);
   border-radius: 50%;
@@ -568,5 +581,6 @@ nav button.navbar-toggler {
   align-content: center;
   color: var(--yellow);
   text-align: center;
+  cursor: pointer;
   pointer-events: all;
 }
