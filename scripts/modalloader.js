@@ -20,17 +20,11 @@ function findTarget(element) {
    }
 }
 
-// displays overlay and modal
+// displays overlay and modal and halts page scroll
 function showModal(query) {
  let readMore = document.querySelector(`.${query}`);
  readMore.style.display = "block";
- window.addEventListener('scroll', noScroll);
-}
-
-// prevents background scrolling while modal is open
-function noScroll() {
- let pos = window.pageYOffset;
- window.scrollTo(0, pos);
+ document.querySelector('html').style.overflowY = "hidden";
 }
 
 // adds event listener to before element (close button)
@@ -44,5 +38,5 @@ for(let i = 0; i < close.length; i++) {
 // closes the modal, and releases page scroll
 function closeModal(modal) {
   modal.style.display = "none";
-  window.removeEventListener('scroll', noScroll);
+  document.querySelector('html').style.overflowY = "auto";
 }
