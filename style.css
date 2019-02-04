@@ -6,6 +6,7 @@
   --yellow: #fdd325;
   --black: #212529;
   --ivory: #FFFFF0;
+  --overlay: rgba(33, 37, 41, .7);
   box-sizing: border-box;
 }
 
@@ -509,4 +510,63 @@ nav button.navbar-toggler {
   margin-right: 4rem;
   border: solid 2px var(--black) !important;
   border-radius: 4px;
+}
+
+/*  modals  */
+
+.overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: var(--overlay);
+  z-index: 2000;
+}
+
+.modal-outer {
+  position: fixed;
+  background-color: transparent;
+  border: 2px solid var(--yellow);
+  border-radius: 10px;
+  z-index: 5000;
+  visibility: visible;
+  color: var(--ivory);
+  width: 90vw;
+  height: 90vh;
+  top: 5vh;
+  left: 5vw;
+  padding: 5px;
+  background-clip: padding-box;
+  pointer-events: none;
+}
+
+.modal-inner {
+  background-color: var(--black);
+  border: 2px solid var(--yellow);
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 50px;
+  position: relative;
+}
+
+.modal-outer:before {
+  content: "X";
+  position: absolute;
+  border: 2px solid var(--yellow);
+  border-radius: 50%;
+  background-color: var(--black); 
+  z-index: 9000;
+  width: 25px;
+  height: 25px;
+  top: -10px;
+  left: 50px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  color: var(--yellow);
+  text-align: center;
+  pointer-events: all;
 }
