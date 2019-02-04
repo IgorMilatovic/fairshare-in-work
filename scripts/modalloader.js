@@ -27,7 +27,7 @@ function showModal(query) {
  document.querySelector('html').style.overflowY = "hidden";
 }
 
-// adds event listener to before element (close button)
+// adds event listener to before element (close button), see also css for both element and before
 for(let i = 0; i < close.length; i++) {
  let current = close[i];
  current.onclick = (current) => {
