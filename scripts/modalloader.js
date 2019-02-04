@@ -43,6 +43,6 @@ for(let i = 0; i < close.length; i++) {
 
 // closes the modal, and releases page scroll
 function closeModal(modal) {
-   window.removeEventListener('scroll', noScroll);
-   modal.style.display = "none";
+  modal.style.display = "none";
+  window.removeEventListener('scroll', noScroll);
 }
