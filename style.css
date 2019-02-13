@@ -118,6 +118,7 @@ h1 {
     -1px 1px 0 var(--ivory),
     1px 1px 0 var(--ivory);
   animation: slide-bot 2s ease;
+  margin-left: 1px !important;
 }
 
 /*  about  */
