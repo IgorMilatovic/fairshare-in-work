@@ -460,6 +460,7 @@ dt {
   padding: 20px;
   z-index: 10;
   color: var(--yellow);
+  font-size: 2rem;
   display: inline-block;
   opacity: 0.8;
 }
