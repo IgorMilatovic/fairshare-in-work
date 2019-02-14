@@ -118,6 +118,7 @@ h1 {
     -1px 1px 0 var(--ivory),
     1px 1px 0 var(--ivory);
   animation: slide-bot 2s ease;
+  margin-left: 1px !important;
 }
 
 /*  about  */
@@ -202,10 +203,10 @@ h2 {
   font-size: 2.5rem;
   padding-bottom: .5rem;
   text-shadow:
-    -1px -1px 0 var(--yellow),  
-     1px -1px 0 var(--yellow),
-    -1px 1px 0 var(--yellow),
-     1px 1px 0 var(--yellow);
+    -1px -1px 0 var(--ivory),  
+     1px -1px 0 var(--ivory),
+    -1px 1px 0 var(--ivory),
+     1px 1px 0 var(--ivory);
   color: var(--black);
   font-family: 'Impact';
 }
@@ -459,6 +460,7 @@ dt {
   padding: 20px;
   z-index: 10;
   color: var(--yellow);
+  font-size: 2rem;
   display: inline-block;
   opacity: 0.8;
 }
@@ -566,15 +568,16 @@ nav button.navbar-toggler {
 
 .modal-outer:before {
   font-family: "FontAwesome";
+  font-size: 30px;
   content: "\f057";
   position: absolute;
   border: 2px solid var(--yellow);
   border-radius: 50%;
   background-color: var(--black); 
   z-index: 9000;
-  width: 25px;
-  height: 25px;
-  top: -10px;
+  width: 40px;
+  height: 40px;
+  top: -17px;
   left: 50px;
   display: grid;
   justify-content: center;
