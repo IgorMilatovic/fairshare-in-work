@@ -169,7 +169,7 @@ h1 {
   max-width: 500px;
   color: var(--ivory);
   background: rgba(0, 0, 0, .5);
-  margin-bottom: -1rem;
+  margin-bottom: 4rem;
   padding-bottom: 0;
   font-size: 1.3rem;
   padding: 1rem 2rem 2rem;
@@ -629,12 +629,40 @@ nav button.navbar-toggler {
 }
 
 .slob-uvod-holder {
-    font-size: 22px;
-    height: 700px;
-    background: url("img/music-free.jpg");
+  /*border: 1px solid var(--yellow);*/
+}
+
+.slob-uvod {
+  border: 2px solid var(--yellow);
+  background: var(--ivory);
+  color: var(--black);
+}
+
+.slob-uvod-text {
+    font-size: 21px;
+}
+
+.tab-pane {
+    font-size: 19px;
+}
+
+.slob-uvod-img-holder {
+    border-top: 2px solid var(--yellow);
+    border-bottom: 2px solid var(--yellow);
+    border-left: 2px solid var(--yellow);
+    max-height: 550px;
+    background: url("img/music-free3.jpg");
     background-size: cover;
     background-position: center;
-    color: var(--black);
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 992px) {
+    .slob-uvod-img-holder {
+      height: 390px;
+      border-right: 2px solid var(--yellow);
+      border-bottom: none;
+  }
 }
 
 .slob-uvod-holder h4 {
