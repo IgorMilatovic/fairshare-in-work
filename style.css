@@ -107,6 +107,10 @@ nav button.navbar-toggler {
     1px 1px 0 var(--black);
 }
 
+.humburger-icon {
+  width: 47px;
+}
+
 /*  header  */
 
 header {
