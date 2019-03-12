@@ -69,7 +69,23 @@ nav .navbar-brand img {
 }
 
 nav ul li {
-  font-size: 1.4rem;
+  font-size: 1.32rem;
+}
+
+@media screen and (max-width: 1235px) {
+  nav ul li {
+    font-size: 1.19rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .navbar-collapse {
+    margin-right: 50px;
+  }
+}
+
+nav button.navbar-toggler {
+    border: none !important;
 }
 
 .nav-link {
@@ -125,9 +141,9 @@ h1 {
 /*  about  */
 
 .about img {
-  max-width: 400px;
+  max-width: 500px;
   height: auto;
-  float: left;
+  /*float: left;*/
   padding: .5rem 2rem 1rem .5rem;
 }
 
@@ -170,7 +186,7 @@ h1 {
   max-width: 500px;
   color: var(--ivory);
   background: rgba(0, 0, 0, .5);
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
   padding-bottom: 0;
   font-size: 1.3rem;
   padding: 1rem 2rem 2rem;
@@ -537,7 +553,7 @@ nav .navbar-brand {
 
 nav button.navbar-toggler {
   margin-right: 4rem;
-  border: solid 2px var(--black) !important;
+  /*border: solid 2px var(--black) !important;*/
   border-radius: 4px;
 }
 
@@ -718,6 +734,15 @@ footer {
 
 .about-p {
     font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.about-p-lg {
+  font-size: 25px;
+}
+
+.about-fs {
+    font-size: 35px;
 }
 
 .footer-section-title {
@@ -767,15 +792,14 @@ footer {
     color: var(--ivory);
 }
 
-.nav-item {
+.tab-nav-item {
     border-radius: 0 !important;
-    /*min-width: 250px;*/
+    width: 250px;
 }
 
 @media screen and (max-width: 1010px) {
    .nav-item {
-    border-radius: 0 !important;
-      min-width: 250px;
+      border-radius: 0 !important;
     }
 }
 
@@ -830,6 +854,15 @@ footer {
 
 .tab-imgtxt-holder {
   margin-top: 70px;
+}
+
+.tab-text-link {
+  color: #6498EB !important;
+}
+
+.tab-text-link:hover {
+  color: #044EC5 !important;
+  cursor: pointer;
 }
 
 /*** /IGOR - TABS ENDE***/
