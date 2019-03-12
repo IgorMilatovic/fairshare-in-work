@@ -133,7 +133,7 @@ h1 {
 /*  parallaxes  */
 
 .parallax-1 {
-  height: 500px;
+  height: 470px;
   margin-bottom: -2rem;
   border-bottom: 1px solid var(--black);
   background-attachment: fixed;
@@ -156,7 +156,7 @@ h1 {
 
 .parallax-1 span, .parallax-2 span{
   color: var(--yellow);
-  font-size: 3rem;
+  font-size: 4.2rem;
   margin-bottom: 1rem;
   text-shadow:
     -2px -2px 0 var(--black),  
@@ -190,11 +190,18 @@ h1 {
 /*  sections  */
 
 .section-title {
-  font-size: 2.5em;
+  font-size: 3.2em;
   font-family: 'Impact';
   color: ivory;
-  border-bottom: 1px solid var(--ivory);
-  margin: auto auto 100px;
+  letter-spacing: 3px;
+  /*border-bottom: 1px solid var(--ivory);*/
+  margin: 0 auto;
+}
+
+.section-title-hr {
+  width: 200px;
+  height: 1px;
+  margin-bottom: 70px;
 }
 
 h2 {
@@ -314,6 +321,13 @@ footer a:hover {
     font-size: 2rem;
   }
 
+  .about {
+    /*font-size: 1.2rem;*/
+    color: ivory;
+    background: var(--black);
+    border-bottom: 1px solid var(--ivory);
+  }
+
   #about img {
     max-width: 300px;
   }
@@ -420,7 +434,7 @@ dt {
   box-sizing: border-box;
   display: grid;
   border: 1px solid var(--yellow);
-  margin: auto;
+  margin: 15px auto 70px auto;
 }
 
 .box_big,
@@ -586,4 +600,83 @@ nav button.navbar-toggler {
   text-align: center;
   cursor: pointer;
   pointer-events: all;
+}
+
+/*** IGOR - SLOBODNA MUZIKA ***/
+
+.slobodna-section {
+    /*background: url("img/slob-bcg.jpg");*/
+}
+
+.title-slobodna-muzika {
+    color: ivory;
+    text-transform: uppercase;
+    font-size: 4em;
+    font-family: 'Impact';
+    letter-spacing: 2px;
+}
+
+.title-slobodna-muzika span {
+    color: red;
+    font-size: 4.8rem;
+}
+
+.slobodna-main-subtitle {
+    font-size: 30px;
+    color: var(--ivory);
+    font-family: 'Impact';
+    letter-spacing: 2px;
+}
+
+.slob-uvod-holder {
+    font-size: 22px;
+    height: 700px;
+    background: url("img/music-free.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--black);
+}
+
+.slob-uvod-holder h4 {
+    margin-top: 100px;
+    font-size: 30px;
+    font-family: 'Impact';
+    letter-spacing: 2px;
+}
+
+.slob-uvod-holder span {
+    color: ivory;
+    font-size: 25px;
+}
+
+.lenin-icon {
+    left: 50%;
+    transform: translate(-50%);
+    top: -66px;
+ }
+
+/*** /IGOR - SLOBODNA MUZIKA ENDE ***/
+
+.about-p {
+    font-size: 21px;
+}
+
+.footer-section-title {
+  border-bottom: solid 1px #fff;
+}
+
+.box_tit span {
+  color: rgba(255, 100, 100, 1);
+}
+
+.izd-cvrstih-color {
+  color: rgba(100, 150, 255, 1);
+}
+
+.nezavisna-color {
+  color: rgba(100, 255, 100, 1);
+}
+
+.treba-vam-color {
+  color: rgba(250, 200, 250, 1);
 }
