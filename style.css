@@ -17,6 +17,7 @@ font-style : normal;
 :root {
   --yellow: #fdd325;
   --black: #212529;
+  --transb: rgba(33, 37, 41, .9);
   --ivory: #FFFFF0;
   --overlay: rgba(33, 37, 41, .7);
   box-sizing: border-box;
@@ -467,7 +468,7 @@ dt {
 
 .box_tit {
   position: absolute;
-  background-color: var(--black);
+  background-color: var(--transb);
   bottom: 0;
   left: 0;
   width: 100%;
@@ -476,7 +477,7 @@ dt {
   color: var(--yellow);
   font-size: 2rem;
   display: inline-block;
-  opacity: 0.8;
+  /*opacity: 0.8;*/
 }
 
 .box_font {
@@ -617,7 +618,7 @@ nav button.navbar-toggler {
 }
 
 .title-slobodna-muzika span {
-    color: red;
+    color: var(--yellow);
     font-size: 4.8rem;
 }
 
