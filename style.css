@@ -604,7 +604,7 @@ nav button.navbar-toggler {
 
 /*** IGOR - SLOBODNA MUZIKA ***/
 
-/*.slobodna-section {
+.slobodna-section {
     background: url("img/slob-bcg.jpg");
 }
 
@@ -653,7 +653,7 @@ nav button.navbar-toggler {
     left: 50%;
     transform: translate(-50%);
     top: -66px;
- }*/
+ }
 
 /*** /IGOR - SLOBODNA MUZIKA ENDE ***/
 
