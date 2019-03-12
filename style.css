@@ -17,7 +17,7 @@ font-style : normal;
 :root {
   --yellow: #fdd325;
   --black: #212529;
-  --transb: rgba(33, 37, 41, .9);
+  --transb: rgba(33, 37, 41, .7);
   --ivory: #FFFFF0;
   --overlay: rgba(33, 37, 41, .7);
   box-sizing: border-box;
@@ -499,6 +499,9 @@ dt {
   display: inline-block;
   /*opacity: 0.8;*/
 }
+.box_tit_size {
+  font-size: 2rem;
+}
 
 .box_font {
   font-family: 'Caveat', cursive;
@@ -509,6 +512,26 @@ dt {
 .black {
   color: var(--black) !important;
 }
+
+.img-fluid {
+  width: 100%;
+}
+/*#promocija {
+  background-image: url('images/bullhorn.jpg');
+  background-blend-mode: color-dodge; 
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 0;
+  padding-top: 54%;
+}*/
+
+/*#nosaci {
+  background-image: url('images/hardcopy_long.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 0;
+  padding-top: 54%;
+}*/
 
 /*  boxes for large screens  */
 
@@ -753,19 +776,19 @@ footer {
   border-bottom: solid 1px #fff;
 }
 
-.box_tit span {
+.redish-color {
   color: rgba(255, 100, 100, 1);
 }
 
-.izd-cvrstih-color {
+.bluish-color {
   color: rgba(100, 150, 255, 1);
 }
 
-.nezavisna-color {
+.greenish-color {
   color: rgba(100, 255, 100, 1);
 }
 
-.treba-vam-color {
+.violet-color {
   color: rgba(250, 200, 250, 1);
 }
 
