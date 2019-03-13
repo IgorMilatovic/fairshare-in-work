@@ -513,9 +513,6 @@ dt {
   color: var(--black) !important;
 }
 
-.img-fluid {
-  width: 100%;
-}
 /*#promocija {
   background-image: url('images/bullhorn.jpg');
   background-blend-mode: color-dodge; 
