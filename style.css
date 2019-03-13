@@ -37,6 +37,10 @@ body {
   font-family: 'Oswald', sans-serif;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 /*  navbar  */
 
 nav#navbar {
@@ -120,7 +124,7 @@ header {
   height: calc(100vh - 60px);
   animation: fade-in 1.4s ease;
   color: var(--black);
-  font-family: 'Impact';
+  font-family: 'Impact', sans-serif;
 }
 
 h1 {
@@ -145,10 +149,10 @@ h1 {
 /*  about  */
 
 .about img {
-  max-width: 500px;
+  max-width: 200px;
   height: auto;
   /*float: left;*/
-  padding: .5rem 2rem 1rem .5rem;
+  padding: 2rem 2rem 2rem .5rem;
 }
 
 /*  parallaxes  */
@@ -212,7 +216,7 @@ h1 {
 
 .section-title {
   font-size: 3.2em;
-  font-family: 'Impact';
+  font-family: 'Impact', sans-serif;
   color: ivory;
   letter-spacing: 3px;
   /*border-bottom: 1px solid var(--ivory);*/
@@ -236,13 +240,13 @@ h2 {
     -1px 1px 0 var(--ivory),
      1px 1px 0 var(--ivory);
   color: var(--black);
-  font-family: 'Impact';
+  font-family: 'Impact', sans-serif;
 }
 
 /*  footer  */
 
 .footer-info {
-  color: var(--yellow);
+  /*color: var(--yellow);*/
   font-size: 1.2rem;
 }
 
@@ -263,9 +267,18 @@ h2 {
   transition: all .4s;
 }
 
+.fa-icon-footer {
+  font-size: 23px;
+}
+
+.fa-icon-footer:hover, .fab:hover {
+  color: var(--yellow);
+}
+
 footer img {
-  max-width: 160px;
+  max-width: 100px;
   height: auto;
+  /*filter: grayscale(100%);*/
 }
 
 footer .soc-icons {
@@ -279,6 +292,15 @@ footer a {
 footer a:hover {
   color: var(--yellow);
   transition: all .4s;
+}
+
+.fab {
+  font-size: 27px;
+  color: var(--ivory);
+}
+
+.V-icon {
+  text-decoration: underline;
 }
 
 /* Keyframes Animations */
@@ -450,11 +472,15 @@ dt {
   height: 3px;
 }
 
-.hr-ivory-double {
+.hr-ivory-double, .hr-ivory-double-footer {
   border: 1px solid var(--ivory);
   border-radius: 4px;
   width: 300px;
   height: 2px;
+}
+
+.hr-ivory-double-footer {
+  width: 200px;
 }
 
 /*  boxes for all screens  */
@@ -682,7 +708,7 @@ nav button.navbar-toggler {
     color: ivory;
     text-transform: uppercase;
     font-size: 4em;
-    font-family: 'Impact';
+    font-family: 'Impact', sans-serif;
     letter-spacing: 2px;
 }
 
@@ -694,7 +720,7 @@ nav button.navbar-toggler {
 .slobodna-main-subtitle {
     font-size: 30px;
     color: var(--ivory);
-    font-family: 'Impact';
+    font-family: 'Impact', sans-serif;
     letter-spacing: 2px;
 }
 
@@ -738,7 +764,7 @@ nav button.navbar-toggler {
 .slob-uvod-holder h4 {
     margin-top: 100px;
     font-size: 30px;
-    font-family: 'Impact';
+    font-family: 'Impact', sans-serif;
     letter-spacing: 2px;
 }
 
@@ -761,29 +787,60 @@ footer {
   margin-top: 300px;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 770px) {
+@media only screen and (min-width: 770px) and (max-width: 870px) {
   footer {
     margin-top: 470px;
   }
 }
 
+@media only screen and (min-width: 600px) and (max-width: 769px) {
+  footer {
+    margin-top: 550px;
+  }
+}
+
 @media only screen and (min-width: 500px) and (max-width: 600px) {
   footer {
-    margin-top: 640px;
+    margin-top: 710px;
   }
 }
 
 @media only screen and (min-width: 420px) and (max-width: 500px) {
   footer {
-    margin-top: 780px;
+    margin-top: 850px;
   }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 420px) {
   footer {
-    margin-top: 1150px;
+    margin-top: 1200px;
   }
 }
+
+ul {
+  list-style: none;
+}
+
+@media only screen and (max-width: 991px) {
+  .footer-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .order-footer-box1 {
+    order: 2;
+  }
+
+  .order-footer-box2 {
+    order: 1;
+  }
+
+  .order-footer-box3 {
+    order: 3;
+  }
+}
+
+
 
 .about-p {
     font-size: 21px;
@@ -816,6 +873,10 @@ footer {
 
 .violet-color {
   color: rgba(250, 200, 250, 1);
+}
+
+.ivory-color {
+  color: var(--ivory);
 }
 
 /*** /IGOR - DODACI ENDE ***/
