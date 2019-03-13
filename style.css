@@ -107,8 +107,8 @@ nav button.navbar-toggler {
     1px 1px 0 var(--black);
 }
 
-.humburger-icon {
-  width: 47px;
+.hamburger-icon {
+  width: 47px !important;
 }
 
 /*  header  */
@@ -497,7 +497,6 @@ dt {
   color: var(--yellow);
   font-size: 2rem;
   display: inline-block;
-  /*opacity: 0.8;*/
 }
 .box_tit_size {
   font-size: 2rem;
@@ -520,6 +519,7 @@ dt {
 /*  boxes for medium screens  */
 
 @media only screen and (min-width: 600px) {
+
   .box {
     grid-template-columns: repeat(2, 1fr);
     align-content: start;
@@ -538,9 +538,7 @@ dt {
     padding: 20px;
     grid-auto-flow: dense;
   }
-  /*.manuell {
-    display: none;
-  }*/
+  
   #saveta {
     grid-column: 2/3;
   }
@@ -549,6 +547,7 @@ dt {
 /*  boxes for large screens  */
 
 @media only screen and (min-width: 900px) {
+
   .box {
     grid-template-columns: repeat(3, 1fr);
     align-content: start;
