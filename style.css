@@ -496,22 +496,21 @@ dt {
 .img-fluid {
   width: 100%;
 }
-/*#promocija {
-  background-image: url('images/bullhorn.jpg');
-  background-blend-mode: color-dodge; 
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 0;
-  padding-top: 54%;
-}*/
 
-/*#nosaci {
-  background-image: url('images/hardcopy_long.jpg');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 0;
-  padding-top: 54%;
-}*/
+/*  boxes for medium screens  */
+
+@media only screen and (min-width: 600px) {
+  .box {
+    grid-template-columns: repeat(2, 1fr);
+    align-content: start;
+    grid-auto-flow: dense;
+    width: 90%;
+  }
+  .box_xlong {
+    position: relative;
+    grid-column: span 2;
+  }
+}
 
 /*  boxes for large screens  */
 
