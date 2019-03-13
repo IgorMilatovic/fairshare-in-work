@@ -435,6 +435,14 @@ dt {
   background: var(--ivory);
 }
 
+.sectionh2 {
+  font-size: 1.8rem;
+  font-family: 'Oswald', sans-serif;
+  text-shadow: 0 0 0;
+  margin-left: 0;
+  letter-spacing: 0;
+}
+
 .hr-yellow {
   border: 2px solid var(--yellow);
   border-radius: 4px;
