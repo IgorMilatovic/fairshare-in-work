@@ -495,7 +495,7 @@ dt {
   padding: 20px;
   z-index: 10;
   color: var(--yellow);
-  font-size: 2rem;
+  font-size: 1.8rem;
   display: inline-block;
 }
 .box_tit_size {
@@ -542,6 +542,12 @@ dt {
   #saveta {
     grid-column: 2/3;
   }
+
+  h2 {
+    width: 90%;
+    margin: auto;
+  }
+
 }
 
 /*  boxes for large screens  */
@@ -575,10 +581,10 @@ dt {
     position: relative;
     grid-column: span 3;
   }
-  h2 {
-    width: 90%;
-    margin: auto;
-  }  
+  
+  #zastupnik {
+    grid-column: 1/3;
+  }
 }
 
 /*  mob nav  */
