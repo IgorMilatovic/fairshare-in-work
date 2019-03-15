@@ -1,544 +1,926 @@
-/* just for test */
+@import url('https://fonts.googleapis.com/css?family=Caveat:400,700&subset=latin-ext');
+
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+font-weight: normal;
+font-style : normal;
+       src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+       src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+}
+
+/*  basics  */
 :root {
-    --yellow: #fdd325;
-    --black: #212529;
-    --ivory: #FFFFF0;
+  --yellow: #fdd325;
+  --black: #212529;
+  --transb: rgba(33, 37, 41, .7);
+  --ivory: #FFFFF0;
+  --overlay: rgba(33, 37, 41, .7);
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 16px;
-    scroll-behavior: smooth;      
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    margin-top: 60px;
-    font-family: 'Oswald', sans-serif;
-    background: var(--black);
+  margin-top: 60px;
+  background: var(--black);
+  color: var(--ivory);
+  font-family: 'Oswald', sans-serif;
 }
 
-h1,h2,h3,h4 {
-    font-family: 'Impact';
-    letter-spacing: 2px;
-}
+/*  navbar  */
 
-.hr-ivory {
-    background: var(--ivory);
-}
-
-.hr-yellow {
-    border: 2px solid var(--yellow);
-    border-radius: 4px;
-    width: 300px;
-    height: 3px;
-}
-
-.hr-ivory-double {
-    border: 1px solid var(--ivory);
-    border-radius: 4px;
-    width: 300px;
-    height: 2px;
-}
-
-.hr-black-double {
-    border: 1px solid var(--black);
-    border-radius: 2px;
-    max-width: 80%;
-    height: 2px;
-}
-
-/* Styling of navbar */
 nav#navbar {
-    background: var(--yellow);
-    box-shadow: 1px 1px 2px #000;
-    animation: fade-in 1.4s ease;
-    z-index: 99;
-
-    position: fixed;
-    top: 0;
-    transition: top 0.3s;
+  background: var(--yellow);
+  box-shadow: 1px 1px 2px #000;
+  animation: fade-in 1.4s ease;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  transition: top 0.3s;
 }
 
-nav .navbar-brand {
-    text-transform: uppercase;
-    font-family: 'Impact', sans-serif;
-    letter-spacing: 4px;
-    font-size: 1.6rem;
+nav#navbar * {
+  color: var(--black);
 }
 
-nav .navbar-brand span {
-    position: relative;
-    top: 3px;
-    left: 2rem;
+.brand-span {
+  position: relative;
+  top: 4px;
+  left: 2rem;
+  text-transform: uppercase;
+  font-family: 'Impact', sans-serif;
+  letter-spacing: 4px;
+  font-size: 1.6rem;
 }
 
 nav .navbar-brand img {
-    width: 50px;
-    height: auto;
+  width: 50px;
+  height: auto;
 }
 
 nav ul li {
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 2px;
-    font-size: 1.4rem;
+  font-size: 1.32rem;
 }
 
-.nav-item .nav-link {
-    color: var(--black) !important;
-    padding: .2rem .4rem;
-    transition: all .4s;
+@media screen and (max-width: 1235px) {
+  nav ul li {
+    font-size: 1.19rem;
+  }
 }
 
-.nav-item.active .nav-link,
-.nav-item:hover .nav-link {
-    color: var(--ivory) !important;
-    background: var(--black);
+@media screen and (min-width: 1300px) {
+  .navbar-collapse {
+    margin-right: 50px;
+  }
 }
 
 nav button.navbar-toggler {
-    margin-right: 4rem;
-    border: solid 2px var(--black) !important;
-    border-radius: 4px;
+    border: none !important;
 }
 
-/* Styling of header */
+.nav-link {
+  font-weight: 800;
+  letter-spacing: 2px;
+  /*padding: .2rem .4rem;*/
+  transition: all .4s;
+}
+
+.nav-link:active,
+.nav-link:hover {
+  color: var(--yellow) !important;
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-shadow: 
+    -1px -1px 0 var(--black), 
+    1px -1px 0 var(--black), 
+    -1px 1px 0 var(--black), 
+    1px 1px 0 var(--black);
+}
+
+.hamburger-icon {
+  width: 47px !important;
+}
+
+/*  header  */
+
 header {
-    background-image: url('img/header.jpg');
-    background-size: cover;
-    background-position: center;
-    height: calc(100vh - 60px);
-    animation: fade-in 1.4s ease;
+  background-image: url('img/header.jpg');
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 60px);
+  animation: fade-in 1.4s ease;
+  color: var(--black);
+  font-family: 'Impact';
 }
 
-header h1 {
-    display: inline-block;
-    margin-top: 5rem;
-    font-size: 5rem;
-    border-bottom: solid 2px var(--yellow);
-    animation: slide-top 2s ease;
+h1 {
+  display: inline-block;
+  margin-top: 5rem;
+  font-size: 5rem;
+  border-bottom: solid 2px var(--yellow);
+  animation: slide-top 2s ease;
 }
 
-header h2 {
-    font-size: 2rem;
-    text-shadow: 
-                -1px -1px 0 var(--ivory),  
-                1px -1px 0 var(--ivory),
-                -1px 1px 0 var(--ivory),
-                1px 1px 0 var(--ivory);
-
-    animation: slide-bot 2s ease;
+.header-title {
+  font-size: 2rem;
+  text-shadow: 
+    -1px -1px 0 var(--ivory),  
+    1px -1px 0 var(--ivory),
+    -1px 1px 0 var(--ivory),
+    1px 1px 0 var(--ivory);
+  animation: slide-bot 2s ease;
+  margin-left: 1px !important;
 }
 
-section h3, footer h3 {
-    font-size: 3rem;
+/*  about  */
+
+.about img {
+  max-width: 500px;
+  height: auto;
+  /*float: left;*/
+  padding: .5rem 2rem 1rem .5rem;
 }
 
-/* Styling of about section */
-#about {
-    font-size: 1.2rem;
-    color: ivory;
-    background: var(--black);
-    border-bottom: 1px solid var(--ivory);
-    
-}
-
-/* style za drugu varijantu about sekcije */
-#about img {
-    max-width: 400px;
-    height: auto;
-    float: left;
-    padding: .5rem 2rem 1rem .5rem;
-}
-
-#about img {
-    max-width: 400px;
-    height: auto;
-    float: left;
-    padding: .5rem 2rem 1rem .5rem;
-}
-
-#about .about-info {
-    border-left: solid 2px lightgrey;
-}
+/*  parallaxes  */
 
 .parallax-1 {
-    height: 500px;
-
-    margin-bottom: -2rem;
-    
-    border-bottom: 1px solid var(--black);
-    background-attachment: fixed;
-    background-image: url('img/paralax1.jpg');
-    background-position: center center;
-    background-size: cover;
+  height: 470px;
+  margin-bottom: -2rem;
+  border-bottom: 1px solid var(--black);
+  background-attachment: fixed;
+  background-image: url('img/paralax1.jpg');
+  background-position: center center;
+  background-size: cover;
 }
 
 .parallax-2 {
-    border-top: 1px solid var(--black);
-    border-bottom: 1px solid var(--black);
-    margin-top: -16px;
-    
-    height: 250px;
-    margin-bottom: -2rem;
-    
-    background-attachment: fixed;
-    background-image: url('img/izdavastvo.jpeg');
-    background-position: center center;
-    background-size: cover;
+  border-top: 1px solid var(--black);
+  border-bottom: 1px solid var(--black);
+  margin-top: -16px;
+  height: 250px;
+  margin-bottom: -2rem;
+  background-attachment: fixed;
+  background-image: url('img/izdavastvo.jpeg');
+  background-position: center center;
+  background-size: cover;
 }
 
 .parallax-1 span, .parallax-2 span{
-    color: var(--yellow);
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    text-shadow:
-               -2px -2px 0 var(--black),  
-                2px -2px 0 var(--black),
-               -2px 2px 0 var(--black),
-                2px 2px 0 var(--black);
-}
-
-details > summary:first-of-type {
-    list-style-type: none;
+  color: var(--yellow);
+  font-size: 4.2rem;
+  margin-bottom: 1rem;
+  text-shadow:
+    -2px -2px 0 var(--black),  
+     2px -2px 0 var(--black),
+    -2px 2px 0 var(--black),
+     2px 2px 0 var(--black);
 }
 
 .para-info {
-    max-width: 500px;
-    color: var(--ivory);
-    background: rgba(0, 0, 0, .5);
-    margin-bottom: -1rem;
-    padding-bottom: 0;
+  max-width: 500px;
+  color: var(--ivory);
+  background: rgba(0, 0, 0, .5);
+  margin-bottom: 5rem;
+  padding-bottom: 0;
+  font-size: 1.3rem;
+  padding: 1rem 2rem 2rem;
 }
 
-.para-info p {
-    font-size: 1.3rem;
-    padding: 1rem 2rem 2rem;
+.parallax-1 button {
+  margin-bottom: 1rem;
+  padding: 0.7rem 1.6rem;
+  background-color: var(--ivory);
+  border: 1px solid var(--black);
+  border-radius: 4px;
+  color: var(--black);
+  font-size: 1.2rem;
+  font-family: 'Oswald', sans-serif;
+  cursor: pointer;
 }
 
-.parallax-1 button,
-.parallax-2 button {
-    margin-bottom: 1rem;
-    padding: 0.7rem 1.6rem;
-    background-color: var(--ivory);
-    border: 1px solid var(--black);
-    border-radius: 4px;
-    color: var(--black);
-    font-size: 1.2rem;
-    font-family: 'Oswald', sans-serif;
-    cursor: pointer;
+/*  sections  */
+
+.section-title {
+  font-size: 3.2em;
+  font-family: 'Impact';
+  color: ivory;
+  letter-spacing: 3px;
+  /*border-bottom: 1px solid var(--ivory);*/
+  margin: 0 auto;
 }
 
-/* Styling of services section */
-#services {
-    background-color: var(--yellow);
-    padding: 0 2rem;
+.section-title-hr {
+  width: 200px;
+  height: 1px;
+  margin-bottom: 70px;
 }
 
-#services h3 {
-    color: var(--black);
-    font-size: 3.7em;
-        /*text-shadow:
-                   -3px -3px 0 var(--ivory),  
-                    3px -3px 0 var(--ivory),
-                   -3px 3px 0 var(--ivory),
-                    3px 3px 0 var(--ivory);*/
-    padding: 0 2rem;
+h2 {
+  letter-spacing: 5px;
+  font-weight: 100;
+  font-size: 2.5rem;
+  padding-bottom: .5rem;
+  text-shadow:
+    -1px -1px 0 var(--ivory),  
+     1px -1px 0 var(--ivory),
+    -1px 1px 0 var(--ivory),
+     1px 1px 0 var(--ivory);
+  color: var(--black);
+  font-family: 'Impact';
 }
 
-.pravo-title {
-    color: var(--black) !important;
-}
+/*  footer  */
 
-.service-ikona-pravo {
-    z-index: 1;
-    width: 86px !important;
-    border-radius: 100%;
-    /*border: 9px solid var(--black);*/
-}
-
-.service-ikona-disco {
-    z-index: 1;
-    width: 80px;
-    border-radius: 100%;
-    border: 9px solid var(--black);
-    position: absolute;
-    bottom: 8rem;
-}
-
-#services h4 {
-    position: relative;
-    z-index: 1;
-    line-height: 1;
-    color: var(--ivory);
-}
-
-/*#services h4::before {
-    content: '';
-    display: block;
-    max-width: 100%;
-    height: 50px;
-    border-radius: .8rem;
-    background-color: var(--black);
-    position: relative;
-    top: 4.2rem;
-    left: -2rem;
-    z-index: -1;
-}*/
-
-#services h4 img {
-    width: 90px;
-    border: solid 2px var(--yellow);
-    border-radius: 50%;
-    margin-right: 1.6rem;
-}
-
-#services span {
-    color: var(--yellow);
-    font-size: 1.9em;
-}
-
-.services-text-color {
-    color: var(--ivory);
-}
-
-.services-pravo-img-holder {
-    height: 460px;
-}
-
-.pravo-img-1 {
-    max-width: 500px;
-    min-width: 300px;
-    -webkit-filter: brightness(1.2);
-    filter: brightness(1.2);
-    -webkit-filter: grayscale(0.4);
-    filter: grayscale(0.6);
-    -webkit-filter: sepia(1.5);
-    filter: sepia(2);
-}
-
-.bcg {
-    background: var(--black);
-}
-
-/* .ekspertsko-height {
-    min-height: 460px;
-} */
-
-#services .disko-img {
-    background-image: url('img/izdavastvo.jpeg');
-    background-size: cover;    
-    background-position: center center;
-    min-height: 300px;
-}
-
-/* #services .info {
-    font-size: 1.2rem;
-    padding: 1rem  0 1rem 2rem;
-} */
-
-#services .card {
-    border: solid 0 var(--black);
-}
-
-#services .card-header {
-    background-color: var(--black);
-    /*padding: 1rem 1rem;*/
-    color: var(--ivory);
-}
-
-#services .card-body {
-    background-color: var(--yellow);
-}
-
-/* Styling of Contact Footer Area */
-footer {
-    background: var(--black);
-    padding: 2rem 0;
-}
-
-footer h3 {
-    color: var(--ivory);
-    border-bottom: solid 1px #fff;
-}
-
-footer .footer-info {
-    color: var(--yellow);
-    font-size: 1.2rem;
-}
-
-.footer-info p:nth-child(1),
-.footer-info p:nth-child(2) {
-    font-size: 1.6rem;
+.footer-info {
+  color: var(--yellow);
+  font-size: 1.2rem;
 }
 
 .footer-info p i {
-    color: var(--ivory);
-    margin-right: .6rem;
+  color: var(--ivory);
+  margin-right: .6rem;
 }
 
 .footer-info p {
     color: var(--ivory);
 }
 
-.footer-info p:nth-child(4) i {
-    font-size: 1.5rem;
-    padding: 0 .25rem;
-}
-
-.footer-info p:nth-child(5) i {
-    font-size: 1.5rem;
-}
-
-.footer-info p:nth-child(6) i {
-    font-size: 1.4rem;
-    padding: .2rem;
-}
-
 .footer-info p.cont-info:hover,
 .footer-info p.cont-info:hover i {
-    display: inline-block;
-    color: var(--yellow);
-    cursor: pointer;
-    transition: all .4s;
+  display: inline-block;
+  color: var(--yellow);
+  cursor: pointer;
+  transition: all .4s;
 }
-
-/* .footer-info i:nth-child(3) {
-    font-size: 1.5rem;
-    color: lime;
-}
-.footer-info i:nth-child(4) {
-    color: red;
-    font-size: .5rem;
-} */
 
 footer img {
-    max-width: 10rem;
-    height: auto;
+  max-width: 160px;
+  height: auto;
 }
 
 footer .soc-icons {
-    margin-top: 4rem;
+  margin-top: 4rem;
 }
 
 footer a {
-    color: var(--ivory);
+  color: var(--ivory);
 }
-    footer a:hover {
-        color: var(--yellow);
-        transition: all .4s;
-    }
+
+footer a:hover {
+  color: var(--yellow);
+  transition: all .4s;
+}
 
 /* Keyframes Animations */
+
 @keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes slide-top {
-    0% {
-        transform: translateY(-30px);
-        opacity: 0;
-    }
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
 
-    50% {
-        transform: translateY(-30px);
-        opacity: 0;
-    }
+  50% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
 
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes slide-bot {
-    0% {
-        transform: translateY(30px);
-        opacity: 0;
-    }
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
 
-    50% {
-        transform: translateY(30px);
-        opacity: 0;
-    }
+  50% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
 
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /* Media Queries for smaller screen sizes */
+
 @media only screen and (max-width: 768px) {
-    html {
-        font-size: 14px;
-    }
+  html {
+    font-size: 14px;
+  }
 
-    header h1 {
-        font-size: 4rem;
-        margin-top: 2.5rem;
-    }
+  h1 {
+    font-size: 4rem;
+    margin-top: 2.5rem;
+  }
 
-    header h2 {
-        font-size: 2rem;
-    }
+  header-title {
+    font-size: 2rem;
+  }
 
-    #about img {
-        max-width: 300px;
-    }
+  .about {
+    /*font-size: 1.2rem;*/
+    color: ivory;
+    background: var(--black);
+    border-bottom: 1px solid var(--ivory);
+  }
 
-    #about .about-info {
-        border-left: none;
-    }
+  #about img {
+    max-width: 300px;
+  }
 
-    
+  #about .about-info {
+    border-left: none;
+  }
 
-    .para-info {
-        max-width: 400px;
-    }
+  .para-info {
+     max-width: 400px;
+  }
 
-    .parallax-1 span, .parallax-2 span{
-        font-size: 4rem;
-    }
+  .parallax-1 span, .parallax-2 span, .paralax3 span{
+    font-size: 4rem;
+  }
 
-    #services h4::before {
-        top: 4.8rem;
-    }
+  #services h4::before {
+    top: 4.8rem;
+  }
 }
 
 @media only screen and (max-width: 576px) {
-    /* html {
-        font-size: 12px;
-    } */
+  h1 {
+    font-size: 3rem;
+    margin-top: 0;
+  }
 
-    header h1 {
-        font-size: 3rem;
-        margin-top: 0;
-    }
+  header-title {
+    font-size: 1.5rem;
+  }
 
-    header h2 {
-        font-size: 1.5rem;
-    }
+  #about img {
+    max-width: 250px;
+  }
 
-    #about img {
-        max-width: 250px;
-    }
+  .para-info {
+    max-width: 300px;
+  }
 
-    .para-info {
-        max-width: 300px;
-    }
+  .parallax-1 span, .parallax-2 span {
+    font-size: 3rem;
+  }
+}
 
-    .parallax-1 span, .parallax-2 span {
-        font-size: 3rem;
-    }
+@media only screen and (max-width: 450px) {
+  nav button.navbar-toggler {
+    margin-right: 1rem !important;
+  }
 
-    #services h4::before {
-        top: 5.6rem;
+  .brand-span {
+    margin-left: -2rem;
+  }
+}
+
+/*  konsultacije details list  */
+
+dt + dd {
+    border: 1px var(--ivory) solid;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+dt {
+    padding: 15px 0 0;
+}
+
+/*  various span styles  */
+
+.aboutyellow {
+  color: var(--yellow);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.manydots {
+  color: var(--yellow);
+  font-size: 2rem;
+}
+
+.hr-ivory {
+  background: var(--ivory);
+}
+
+.sectionh2 {
+  font-size: 1.8rem;
+  font-family: 'Oswald', sans-serif;
+  text-shadow: 0 0 0;
+  margin-left: 0;
+  letter-spacing: 0;
+}
+
+.hr-yellow {
+  border: 2px solid var(--yellow);
+  border-radius: 4px;
+  width: 300px;
+  height: 3px;
+}
+
+.hr-ivory-double {
+  border: 1px solid var(--ivory);
+  border-radius: 4px;
+  width: 300px;
+  height: 2px;
+}
+
+/*  boxes for all screens  */
+
+.box {
+  box-sizing: border-box;
+  display: grid;
+  border: 1px solid var(--yellow);
+  margin: 15px auto 70px auto;
+}
+
+.box_big,
+.img_box,
+.box_text,
+.box_tall {
+  border: 1px solid var(--yellow);
+}
+
+.box_big {
+  padding: 20px;
+  display: grid;
+  align-content: center;
+}
+
+.box_yellow {
+  background-color: var(--yellow);
+  color: var(--black) !important;
+}
+
+.box_text {
+  padding: 20px;
+  align-content: center;
+  display: grid;
+}
+
+.img_text {
+  position: relative;
+}
+
+.box_tit {
+  position: absolute;
+  background-color: var(--transb);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  z-index: 10;
+  color: var(--yellow);
+  font-size: 1.8rem;
+  display: inline-block;
+}
+.box_tit_size {
+  font-size: 2rem;
+}
+
+.box_font {
+  font-family: 'Caveat', cursive;
+  font-size: 1.2rem !important;
+  font-weight: 700;
+  padding-left: 20px;
+}
+
+.black {
+  color: var(--black) !important;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+/*  boxes for medium screens  */
+
+@media only screen and (min-width: 600px) {
+
+  .box {
+    grid-template-columns: repeat(2, 1fr);
+    align-content: start;
+    grid-auto-flow: dense;
+    width: 90%;
+  }
+  .box_xlong {
+    position: relative;
+    grid-column: span 2;
+  }
+  .box_tall {
+    display: grid;
+    align-content: center; 
+    grid-row: 1 / 3;
+    grid-column: span 1;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+  
+  #saveta {
+    grid-column: 2/3;
+  }
+
+  h2 {
+    width: 90%;
+    margin: auto;
+  }
+
+  .img_box {
+    grid-row: span 1;
+  }
+}
+
+/*  boxes for large screens  */
+
+@media only screen and (min-width: 900px) {
+
+  .box {
+    grid-template-columns: repeat(3, 1fr);
+    align-content: start;
+    grid-auto-flow: dense;
+    width: 90%;
+  }
+  .box_big {
+    grid-column: span 2;
+    grid-row: span 2; 
+  }
+  .img_box {
+    grid-row: span 1;
+  }
+  .box_text {
+    grid-column: span 1;
+  }
+  .box_tall {
+    display: grid;
+    align-content: center; 
+    grid-row: span 2;
+    grid-column: span 1;
+    padding: 20px;
+  }
+  .box_xlong {
+    position: relative;
+    grid-column: span 3;
+  }
+  
+  #zastupnik,
+  #medijacija {
+    grid-column: 1/3;
+  }
+}
+
+/*  mob nav  */
+
+nav .navbar-brand {
+  text-transform: uppercase;
+  font-family: 'Impact', sans-serif;
+  letter-spacing: 4px;
+  font-size: 1.6rem;
+}
+
+nav button.navbar-toggler {
+  margin-right: 4rem;
+  /*border: solid 2px var(--black) !important;*/
+  border-radius: 4px;
+}
+
+/*  modals  */
+
+.overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: var(--overlay);
+  z-index: 2000;
+}
+
+.modal-outer {
+  position: fixed;
+  background-color: transparent;
+  border: 2px solid var(--yellow);
+  border-radius: 10px;
+  z-index: 5000;
+  visibility: visible;
+  color: var(--ivory);
+  width: 90vw;
+  height: 90vh;
+  top: 5vh;
+  left: 5vw;
+  padding: 5px;
+  background-clip: padding-box;
+  pointer-events: none;
+}
+
+.modal-inner {
+  background-color: var(--black);
+  border: 2px solid var(--yellow);
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 50px;
+  position: relative;
+}
+
+.modal-outer:before {
+  font-family: "FontAwesome";
+  font-size: 30px;
+  content: "\f057";
+  position: absolute;
+  border: 2px solid var(--yellow);
+  border-radius: 50%;
+  background-color: var(--black); 
+  z-index: 9000;
+  width: 40px;
+  height: 40px;
+  top: -17px;
+  left: 50px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  color: var(--yellow);
+  text-align: center;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+/*** IGOR - SLOBODNA MUZIKA ***/
+
+.slobodna-section {
+    background: url("img/slob-bcg.jpg");
+}
+
+.title-slobodna-muzika {
+    color: ivory;
+    text-transform: uppercase;
+    font-size: 4em;
+    font-family: 'Impact';
+    letter-spacing: 2px;
+}
+
+.title-slobodna-muzika span {
+    color: var(--yellow);
+    font-size: 4.8rem;
+}
+
+.slobodna-main-subtitle {
+    font-size: 30px;
+    color: var(--ivory);
+    font-family: 'Impact';
+    letter-spacing: 2px;
+}
+
+.slob-uvod-holder {
+  /*border: 1px solid var(--yellow);*/
+}
+
+.slob-uvod {
+  border: 2px solid var(--yellow);
+  background: var(--ivory);
+  color: var(--black);
+}
+
+.slob-uvod-text {
+    font-size: 21px;
+}
+
+.tab-pane {
+    font-size: 19px;
+}
+
+.slob-uvod-img-holder {
+    border-top: 2px solid var(--yellow);
+    border-bottom: 2px solid var(--yellow);
+    border-left: 2px solid var(--yellow);
+    max-height: 550px;
+    background: url("img/music-free3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 992px) {
+    .slob-uvod-img-holder {
+      height: 390px;
+      border-right: 2px solid var(--yellow);
+      border-bottom: none;
+  }
+}
+
+.slob-uvod-holder h4 {
+    margin-top: 100px;
+    font-size: 30px;
+    font-family: 'Impact';
+    letter-spacing: 2px;
+}
+
+.slob-uvod-holder span {
+    color: ivory;
+    font-size: 25px;
+}
+
+.lenin-icon {
+    left: 50%;
+    transform: translate(-50%);
+    top: -66px;
+ }
+
+/*** /IGOR - SLOBODNA MUZIKA ENDE ***/
+
+/*** IGOR - DODACI ***/
+
+footer {
+  margin-top: 300px;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 770px) {
+  footer {
+    margin-top: 470px;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+  footer {
+    margin-top: 640px;
+  }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 500px) {
+  footer {
+    margin-top: 780px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+  footer {
+    margin-top: 1150px;
+  }
+}
+
+.about-p {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.about-p-lg {
+  font-size: 25px;
+}
+
+.about-fs {
+    font-size: 35px;
+}
+
+.footer-section-title {
+  border-bottom: solid 1px #fff;
+}
+
+.redish-color {
+  color: rgba(255, 100, 100, 1);
+}
+
+.bluish-color {
+  color: rgba(100, 150, 255, 1);
+}
+
+.greenish-color {
+  color: rgba(100, 255, 100, 1);
+}
+
+.violet-color {
+  color: rgba(250, 200, 250, 1);
+}
+
+/*** /IGOR - DODACI ENDE ***/
+
+/*** IGOR - TABS ***/
+
+.nav{
+    background-color: #303335;
+    padding: 25px;
+}
+
+.nav-tabs {
+    border-bottom: none !important;
+}
+
+#tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    /*color: #336683 !important;*/
+    /*background-color: #a4d6ef !important;*/
+    /*border-color: transparent transparent var(--yellow);*/
+}
+
+#tabs .nav-tabs .nav-link {
+    /*color: #eee;*/
+    font-size: 20px;
+    background-color: var(--black);
+    border: 1px solid var(--yellow);
+    color: var(--ivory);
+}
+
+.tab-nav-item {
+    border-radius: 0 !important;
+    width: 250px;
+}
+
+@media screen and (max-width: 1010px) {
+   .nav-item {
+      border-radius: 0 !important;
     }
 }
-.aboutyellow {
-        color: var(--yellow);
-    }
+
+.nav-tabs .nav-link.active{
+   background: var(--yellow) !important;
+   color: var(--yellow) !important;
+   text-shadow: 
+    -1px -1px 0 var(--black), 
+    1px -1px 0 var(--black), 
+    -1px 1px 0 var(--black), 
+    1px 1px 0 var(--black);
+}
+
+.tab-img {
+  float: left;
+  width: 200px;
+}
+
+.radiosparx-img, .fma-img {
+  width: 300px;
+}
+
+@media only screen and (min-width: 400px) {
+  .tab-img {
+    margin: 2px 25px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .tab-img {
+    width: 80%;
+    float: none;
+    display: block;
+    margin: 15px auto;
+  }
+}
+
+.tab-pane {
+  min-height: 400px;
+  max-width: 850px;
+  min-width: 85%;
+  top: -24px;
+  left: 50%;
+  transform: translate(-50%);
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--black);
+  border-left: 1px solid var(--yellow);
+  border-right: 1px solid var(--yellow);
+  border-bottom: 1px solid var(--yellow);
+}
+
+.tab-imgtxt-holder {
+  margin-top: 70px;
+}
+
+.tab-text-link {
+  color: #6498EB !important;
+}
+
+.tab-text-link:hover {
+  color: #044EC5 !important;
+  cursor: pointer;
+}
+
+/*** /IGOR - TABS ENDE***/
