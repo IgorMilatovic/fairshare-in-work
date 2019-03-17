@@ -96,6 +96,10 @@ nav button.navbar-toggler {
   outline: none !important;
 }
 
+.hamburger-outline:hover {
+  outline: border: solid 2px var(--black) !important;;
+}
+
 .nav-link {
   font-weight: 800;
   letter-spacing: 2px;
@@ -159,6 +163,10 @@ h1 {
   padding: 2rem 2rem 2rem .5rem;
 }
 
+.about-p {
+  font-size: 21px;
+}
+
 /*  parallaxes  */
 
 .parallax-1 {
@@ -183,15 +191,20 @@ h1 {
   background-size: cover;
 }
 
-.parallax-1 span, .parallax-2 span{
+.parallax-1 .title, .parallax-2 span{
   color: var(--yellow);
-  font-size: 4.2rem;
-  margin-bottom: 1rem;
+  font-size: 4rem;
   text-shadow:
     -2px -2px 0 var(--black),  
      2px -2px 0 var(--black),
     -2px 2px 0 var(--black),
      2px 2px 0 var(--black);
+}
+
+@media screen and (max-width: 850px) {
+  .parallax-1 .title {
+    font-size: 3rem;
+  }
 }
 
 .para-info {
@@ -200,8 +213,17 @@ h1 {
   background: rgba(0, 0, 0, .5);
   margin-bottom: 5rem;
   padding-bottom: 0;
-  font-size: 1.3rem;
-  padding: 1rem 2rem 2rem;
+  font-size: 1.17rem;
+}
+
+@media screen and (max-width: 550px) {
+  .parallax-1 .title {
+    font-size: 2.3rem;
+  }
+
+  .para-info {
+    font-size: 1.2rem;
+  }
 }
 
 .parallax-1 button {
@@ -788,6 +810,18 @@ nav button.navbar-toggler {
       border-right: 2px solid var(--yellow);
       border-bottom: none;
   }
+
+  .title-slobodna-muzika {
+    font-size: 3em;
+  }
+
+  .title-slobodna-muzika span {
+      font-size: 4.1rem;
+  }
+
+  .slobodna-main-subtitle {
+      font-size: 23px;
+  }
 }
 
 .slob-uvod-holder h4 {
@@ -869,15 +903,11 @@ ul {
   }
 }
 
-
-
-.about-p {
-    font-size: 21px;
+@media screen and (max-width: 550px) {
+  .about-p {
+    font-size: 18px;
     margin-bottom: 15px;
-}
-
-.about-p-lg {
-  font-size: 25px;
+  }
 }
 
 .about-fs {
@@ -1009,3 +1039,37 @@ ul {
 }
 
 /*** /IGOR - TABS ENDE***/
+
+/*** UGOVOR PAGE***/
+
+.slob-uvod-ugovor {
+  background: var(--black);
+  color: ivory;
+}
+
+.tab-imgtxt-holder li {
+  padding: 4px 0;
+}
+
+.ugovor-mali-naslov {
+  font-size: 28px !important;
+}
+
+.nazad-link {
+  color: var(--yellow) !important;
+  font-size: 28px !important;
+}
+
+.nazad-link:hover {
+  color: darkorange !important;
+}
+
+.tab-pane-ugovor {
+  margin-top: -26px !important;
+  transform: translate(0);
+  background: ivory;
+  color: var(--black);
+  border: 3px solid var(--yellow);
+}
+
+
