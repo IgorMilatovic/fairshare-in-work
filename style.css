@@ -525,6 +525,13 @@ dt {
   border: 1px solid var(--yellow);
 }
 
+.img_box {
+  height: 100%;
+}
+.img_box img {
+  height: 100%;
+}
+
 .box_big {
   padding: 20px;
   display: grid;
