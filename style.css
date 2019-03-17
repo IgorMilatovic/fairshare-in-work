@@ -526,8 +526,8 @@ dt {
 
 .arrow-back {
   position: absolute;
-  left: 30px;
-  top: -14px;
+  /*left: 30px;
+  top: -14px;*/
   font-size: 2rem;
   cursor: pointer;
   border: 2px solid var(--yellow);
