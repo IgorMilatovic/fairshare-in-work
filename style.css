@@ -138,7 +138,7 @@ header {
   height: calc(100vh - 60px);
   animation: fade-in 1.4s ease;
   color: var(--black);
-  font-family: 'Impact', sans-serif;
+  font-family: 'Impacto', sans-serif;
 }
 
 .main-title {
@@ -252,7 +252,7 @@ h1 {
 
 .section-title {
   font-size: 3.2em;
-  font-family: 'Impact', sans-serif;
+  font-family: 'Impacto', sans-serif;
   color: ivory;
   letter-spacing: 3px;
   /*border-bottom: 1px solid var(--ivory);*/
@@ -787,7 +787,7 @@ nav button.navbar-toggler {
     color: ivory;
     text-transform: uppercase;
     font-size: 4em;
-    font-family: 'Impact', sans-serif;
+    font-family: 'Impacto', sans-serif;
     letter-spacing: 2px;
 }
 
@@ -799,7 +799,7 @@ nav button.navbar-toggler {
 .slobodna-main-subtitle {
     font-size: 30px;
     color: var(--ivory);
-    font-family: 'Impact', sans-serif;
+    font-family: 'Impacto', sans-serif;
     letter-spacing: 2px;
 }
 
@@ -855,7 +855,7 @@ nav button.navbar-toggler {
 .slob-uvod-holder h4 {
     margin-top: 100px;
     font-size: 30px;
-    font-family: 'Impact', sans-serif;
+    font-family: 'Impacto', sans-serif;
     letter-spacing: 2px;
 }
 
