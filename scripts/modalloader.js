@@ -1,6 +1,8 @@
 // array svih elemenata sa klasom "target" klikom na koje se treba otvoriti modal
 const targets = document.querySelectorAll(`.target`),
-      close = document.querySelectorAll(`.modal-outer`);
+      modal = document.querySelectorAll(`.modal-outer`),
+      close = document.querySelector(`.arrow-back`);
+
 
 // adds onclik to all members of targets array
 for(let i = 0; i < targets.length; i++) {
@@ -19,17 +21,26 @@ function findTarget(element) {
     findTarget(element.parentElement);
    }
 }
-
+//let readMore, arrowDiv, arrowSpan;
 // displays overlay and modal and halts page scroll
 function showModal(query) {
  let readMore = document.querySelector(`.${query}`);
+ console.log(readMore);
  readMore.style.display = "block";
+ let arrowDiv = document.querySelector(`.arrow-back`);
+ arrowDiv.style.display = "block";
+ readMore.appendChild(arrowDiv);
+ arrowDiv.style.position = "absolute";
+ arrowDiv.style.top = 15 + "px";
+ arrowDiv.style.left = 90 + "px";
+ arrowDiv.style.zIndex = 9999; 
  document.querySelector('html').style.overflowY = "hidden";
+ readMore.style.overflowY = "scroll";
 }
 
 // adds event listener to before element (close button), see also css for both element and before
-for(let i = 0; i < close.length; i++) {
- let current = close[i];
+for(let i = 0; i < modal.length; i++) {
+ let current = modal[i];
  current.onclick = (current) => {
   closeModal(current.target.parentElement);
  }

@@ -524,6 +524,21 @@ dt {
   position: relative;
 }
 
+.arrow-back {
+  position: absolute;
+  left: 30px;
+  top: -14px;
+  font-size: 2rem;
+  cursor: pointer;
+  border: 2px solid var(--yellow);
+  border-radius: 5px;
+  padding: 0 10px;
+  background-color: var(--yellow);
+  color: var(--black);
+  line-height: 0;
+  display: none;
+}
+
 .box_tit {
   position: absolute;
   background-color: var(--transb);
@@ -671,7 +686,7 @@ nav button.navbar-toggler {
   left: 5vw;
   padding: 5px;
   background-clip: padding-box;
-  pointer-events: none;
+  /*pointer-events: none;*/
 }
 
 .modal-inner {
@@ -682,10 +697,10 @@ nav button.navbar-toggler {
   height: 100%;
   overflow-y: auto;
   padding: 50px;
-  position: relative;
+  /*position: relative;*/
 }
 
-.modal-outer:before {
+/*.modal-outer:before {
   font-family: "FontAwesome";
   font-size: 30px;
   content: "\f057";
@@ -705,7 +720,7 @@ nav button.navbar-toggler {
   text-align: center;
   cursor: pointer;
   pointer-events: all;
-}
+}*/
 
 /*** IGOR - SLOBODNA MUZIKA ***/
 
