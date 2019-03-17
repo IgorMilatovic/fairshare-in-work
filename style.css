@@ -690,7 +690,7 @@ dt {
 /*  mob nav  */
 
 .header-title {
-  font-family: Impact;
+  font-family: "Impact" !important;
 }
 nav .navbar-brand {
   text-transform: uppercase;
