@@ -140,6 +140,10 @@ header {
   font-family: 'Impact', sans-serif;
 }
 
+.main-title {
+  font-family: 'Impact', sans-serif;
+}
+
 h1 {
   display: inline-block;
   margin-top: 5rem;
