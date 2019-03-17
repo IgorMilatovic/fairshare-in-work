@@ -689,6 +689,9 @@ dt {
 
 /*  mob nav  */
 
+.header-title {
+  font-family: Impact;
+}
 nav .navbar-brand {
   text-transform: uppercase;
   font-family: 'Impact', sans-serif;
