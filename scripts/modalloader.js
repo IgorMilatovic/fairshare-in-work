@@ -3,27 +3,27 @@ const targets = document.querySelectorAll(`.target`),
       modal = document.querySelectorAll(`.modal-outer`),
       close = document.querySelector(`.arrow-back`);
 
-let uniqueId = 0;
-for (let target of targets) {
-  uniqueId++;
-  let arrowDiv = document.createElement(`div`);
-  target.appendChild(arrowDiv);
-  arrowDiv.setAttribute(`class`, `arrow-for arrow-${uniqueId}`);
-  let arrowSpan = document.createElement(`span`);
-  arrowDiv.appendChild(arrowSpan);
-  arrowSpan.setAttribute(`class`, `fas fa-arrow-right`);
-  arrowSpan.style.position = "absolute";  
-  target.style.position = "relative";
-  arrowSpan.style.right = `10px`;
-  arrowSpan.style.bottom = `5px`;
-  arrowSpan.style.zIndex = 15;
-  arrowSpan.style.cursor = `pointer`;
-  arrowDiv.style.fontSize = `1.2rem`;
-  console.log(arrowSpan.style.color);
-  if (arrowSpan.style.color == `#FFFFF0`) {
-    arrowSpan.style.color == `#fdd325`;
-  }
-}
+// let uniqueId = 0;
+// for (let target of targets) {
+//   uniqueId++;
+//   let arrowDiv = document.createElement(`div`);
+//   target.appendChild(arrowDiv);
+//   arrowDiv.setAttribute(`class`, `arrow-for arrow-${uniqueId}`);
+//   let arrowSpan = document.createElement(`span`);
+//   arrowDiv.appendChild(arrowSpan);
+//   arrowSpan.setAttribute(`class`, `fas fa-arrow-right`);
+//   arrowSpan.style.position = "absolute";  
+//   target.style.position = "relative";
+//   arrowSpan.style.right = `10px`;
+//   arrowSpan.style.bottom = `5px`;
+//   arrowSpan.style.zIndex = 15;
+//   arrowSpan.style.cursor = `pointer`;
+//   arrowDiv.style.fontSize = `1.2rem`;
+//   console.log(arrowSpan.style.color);
+//   if (arrowSpan.style.color == `#FFFFF0`) {
+//     arrowSpan.style.color == `#fdd325`;
+//   }
+// }
 
 // adds onclik to all members of targets array
 for(let i = 0; i < targets.length; i++) {
@@ -46,13 +46,16 @@ function findTarget(element) {
 // displays overlay and modal and halts page scroll
 function showModal(query) {
  let readMore = document.querySelector(`.${query}`);
- readMore.style.display = "block";
+ readMore.style.display = "grid";
  let arrowDiv = document.querySelector(`.arrow-back`);
+  console.log(readMore);
+ readMore.childNodes[1].appendChild(arrowDiv);
  arrowDiv.style.display = "block";
- readMore.appendChild(arrowDiv);
- arrowDiv.style.position = "absolute";
- arrowDiv.style.top = 18 + "px";
- arrowDiv.style.left = 90 + "px";
+ // readMore.appendChild(arrowDiv);
+  document.querySelector(`.modal-outer`).style.position = `relative`;
+  arrowDiv.style.position = "absolute";
+  arrowDiv.style.top = -12 + "px";
+  arrowDiv.style.left = 28 + "px";
  arrowDiv.style.zIndex = 9999; 
  document.querySelector('html').style.overflowY = "hidden";
  readMore.style.overflowY = "scroll";

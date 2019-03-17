@@ -554,10 +554,10 @@ dt {
 }
 
 .arrow-back {
-  position: absolute;
-  /*left: 30px;
-  top: -14px;*/
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  text-align: center;
+  align-self: center;
+  width: 40px;
   cursor: pointer;
   border: 2px solid var(--yellow);
   border-radius: 5px;
