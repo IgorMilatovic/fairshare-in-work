@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Caveat:400,700&subset=latin-ext');
+/*@import url('https://fonts.googleapis.com/css?family=Caveat:400,700&subset=latin-ext');*/
 
 @font-face {
 font-family: "FontAwesome";
@@ -11,6 +11,11 @@ font-style : normal;
              url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
              url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
              url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+}
+
+@font-face {
+  src: url('fonts/impact.ttf');
+  font-family: "Impact";
 }
 
 /*  basics  */
