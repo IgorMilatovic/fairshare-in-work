@@ -550,11 +550,11 @@ dt {
   position: absolute;
   /*left: 30px;
   top: -14px;*/
-  font-size: 2rem;
+  font-size: 1.3rem;
   cursor: pointer;
   border: 2px solid var(--yellow);
   border-radius: 5px;
-  padding: 0 10px;
+  padding: 2px 10px;
   background-color: var(--yellow);
   color: var(--black);
   line-height: 0;

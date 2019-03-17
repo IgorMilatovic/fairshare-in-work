@@ -11,14 +11,14 @@ for (let target of targets) {
   arrowDiv.setAttribute(`class`, `arrow-for arrow-${uniqueId}`);
   let arrowSpan = document.createElement(`span`);
   arrowDiv.appendChild(arrowSpan);
-  arrowSpan.setAttribute(`class`, `fas fa-long-arrow-alt-right`);
-  arrowSpan.style.position = "absolute";
+  arrowSpan.setAttribute(`class`, `fas fa-arrow-right`);
+  arrowSpan.style.position = "absolute";  
   target.style.position = "relative";
   arrowSpan.style.right = `10px`;
   arrowSpan.style.bottom = `5px`;
   arrowSpan.style.zIndex = 15;
   arrowSpan.style.cursor = `pointer`;
-  arrowDiv.style.fontSize = `2rem`;
+  arrowDiv.style.fontSize = `1.2rem`;
   console.log(arrowSpan.style.color);
   if (arrowSpan.style.color == `#FFFFF0`) {
     arrowSpan.style.color == `#fdd325`;
@@ -51,7 +51,7 @@ function showModal(query) {
  arrowDiv.style.display = "block";
  readMore.appendChild(arrowDiv);
  arrowDiv.style.position = "absolute";
- arrowDiv.style.top = 15 + "px";
+ arrowDiv.style.top = 18 + "px";
  arrowDiv.style.left = 90 + "px";
  arrowDiv.style.zIndex = 9999; 
  document.querySelector('html').style.overflowY = "hidden";
