@@ -697,7 +697,12 @@ nav button.navbar-toggler {
   height: 100%;
   overflow-y: auto;
   padding: 50px;
+
   /*position: relative;*/
+}
+
+.modal-inner * {
+  padding-bottom: 50px;
 }
 
 /*.modal-outer:before {

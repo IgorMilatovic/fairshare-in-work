@@ -3,6 +3,27 @@ const targets = document.querySelectorAll(`.target`),
       modal = document.querySelectorAll(`.modal-outer`),
       close = document.querySelector(`.arrow-back`);
 
+let uniqueId = 0;
+for (let target of targets) {
+  uniqueId++;
+  let arrowDiv = document.createElement(`div`);
+  target.appendChild(arrowDiv);
+  arrowDiv.setAttribute(`class`, `arrow-for arrow-${uniqueId}`);
+  let arrowSpan = document.createElement(`span`);
+  arrowDiv.appendChild(arrowSpan);
+  arrowSpan.setAttribute(`class`, `fas fa-long-arrow-alt-right`);
+  arrowSpan.style.position = "absolute";
+  target.style.position = "relative";
+  arrowSpan.style.right = `10px`;
+  arrowSpan.style.bottom = `5px`;
+  arrowSpan.style.zIndex = 15;
+  arrowSpan.style.cursor = `pointer`;
+  arrowDiv.style.fontSize = `2rem`;
+  console.log(arrowSpan.style.color);
+  if (arrowSpan.style.color == `#FFFFF0`) {
+    arrowSpan.style.color == `#fdd325`;
+  }
+}
 
 // adds onclik to all members of targets array
 for(let i = 0; i < targets.length; i++) {
