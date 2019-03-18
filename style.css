@@ -224,6 +224,14 @@ h1 {
   .parallax-1 .title {
     font-size: 3rem;
   }
+
+  .parallax-1 {
+    background-attachment: scroll;
+    /*-webkit-background-size: 900px 495px;*/
+    background-image: url('img/paralax1.jpg');
+    background-position: center center;
+    background-size: cover;
+  }
 }
 
 .para-info {
@@ -423,7 +431,6 @@ footer a:hover {
     /*font-size: 1.2rem;*/
     color: ivory;
     background: var(--black);
-    border-bottom: 1px solid var(--ivory);
   }
 
   #about img {
