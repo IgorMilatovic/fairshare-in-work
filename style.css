@@ -225,13 +225,13 @@ h1 {
     font-size: 3rem;
   }
 
-  .parallax-1 {
+  /*.parallax-1 {
     background-attachment: scroll;
-    /*-webkit-background-size: 900px 495px;*/
+    -webkit-background-size: 900px 495px;
     background-image: url('img/paralax1.jpg');
     background-position: center center;
     background-size: cover;
-  }
+  }*/
 }
 
 .para-info {
@@ -489,6 +489,10 @@ footer a:hover {
 
 /*  konsultacije details list  */
 
+.konsultacije-p {
+  border-bottom: 2px solid var(--yellow);
+}
+
 dt + dd {
     border: 1px var(--ivory) solid;
     border-radius: 5px;
@@ -617,7 +621,7 @@ dt {
   padding: 20px;
   z-index: 10;
   color: var(--yellow);
-  font-size: 1.8rem;
+  font-size: 2rem;
   display: inline-block;
 }
 .box_tit_size {
@@ -625,9 +629,16 @@ dt {
 }
 
 .box_font {
-  /*font-family: 'Caveat', cursive;*/
-  font-size: 1.2rem !important;
+  font-size: 1.4rem !important;
   font-weight: 700;
+}
+
+.izdavastvo-span {
+  font-size: 1.9rem;
+}
+
+.publishing-ul {
+  font-size: 19px;
 }
 
 .black {
@@ -636,6 +647,10 @@ dt {
 
 .img-fluid {
   width: 100%;
+}
+
+.digit_text {
+  font-size: 19px;
 }
 
 /*  boxes for medium screens  */
@@ -659,6 +674,7 @@ dt {
     grid-column: span 1;
     padding: 20px;
     grid-auto-flow: dense;
+    font-size: 19px;
   }
   
   #saveta {
