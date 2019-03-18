@@ -54,7 +54,7 @@ function showModal(query) {
  // readMore.appendChild(arrowDiv);
   document.querySelector(`.modal-outer`).style.position = `relative`;
   arrowDiv.style.position = "absolute";
-  arrowDiv.style.top = -12 + "px";
+  arrowDiv.style.top = -11 + "px";
   arrowDiv.style.left = 28 + "px";
  arrowDiv.style.zIndex = 9999; 
  document.querySelector('html').style.overflowY = "hidden";
