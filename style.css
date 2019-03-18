@@ -43,8 +43,12 @@ body {
   font-family: 'Oswald', sans-serif;
 }
 
+a {
+  color: rgba(100, 150, 255, 1);
+}
 a:hover {
   text-decoration: none;
+  color: #337edb;
 }
 
 /*  navbar  */
@@ -617,7 +621,6 @@ dt {
   /*font-family: 'Caveat', cursive;*/
   font-size: 1.2rem !important;
   font-weight: 700;
-  padding-left: 20px;
 }
 
 .black {
@@ -762,8 +765,17 @@ nav button.navbar-toggler {
   height: 100%;
   overflow-y: auto;
   padding: 50px;
+}
 
-  /*position: relative;*/
+.modal-title {
+  color: var(--yellow);
+  text-shadow: 0 0 0;
+}
+
+.modal-content {
+  font-size: 1.15rem;
+  background-color: var(--black);
+  border: 0;
 }
 
 .modal-inner * {
