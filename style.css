@@ -222,8 +222,8 @@ h1 {
   }
 
   .parallax-1 {
-    background-attachment: fixed;
-    -webkit-background-size: 900px 495px;
+    background-attachment: scroll;
+    /*-webkit-background-size: 900px 495px;*/
     background-image: url('img/paralax1.jpg');
     background-position: center center;
     background-size: cover;
