@@ -794,6 +794,28 @@ nav button.navbar-toggler {
   padding: 50px;
 }
 
+@media only screen and (max-width: 992px) {
+  .modal-inner {
+    padding: 20px;
+  }
+  .modal-title {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .modal-inner {
+    padding: 10px;
+  }
+  .modal-title {
+    font-size: 1.4rem;
+    padding-top: 20px;
+  }
+  .modal-content {
+    font-size: 1.3rem;
+  }
+
+}
 .modal-title {
   color: var(--yellow);
   text-shadow: 0 0 0;
