@@ -587,7 +587,7 @@ dt {
 }
 
 .box_yellow {
-  background-color: var(--yellow);
+  background-color: var(--ivory);
   color: var(--black) !important;
 }
 
@@ -952,6 +952,17 @@ nav button.navbar-toggler {
 
 footer {
   margin-top: 300px;
+}
+
+.mini-logo {
+  width: 30px;
+  filter: grayscale(100%);
+  margin-top: -5px;
+}
+
+.kvazi-copy {
+  border-top: 1px solid ivory;
+  border-bottom: 1px solid ivory;
 }
 
 @media only screen and (min-width: 770px) and (max-width: 870px) {
