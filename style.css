@@ -189,6 +189,11 @@ h1 {
   background-size: cover;
 }
 
+.paralax-bold-text {
+  font-size: 20px;
+  color: var(--yellow);
+}
+
 .parallax-2 {
   border-top: 1px solid var(--black);
   border-bottom: 1px solid var(--black);
@@ -218,7 +223,7 @@ h1 {
 }
 
 .para-info {
-  max-width: 500px;
+  max-width: 600px;
   color: var(--ivory);
   background: rgba(0, 0, 0, .5);
   margin-bottom: 5rem;
@@ -226,6 +231,16 @@ h1 {
   font-size: 1.17rem;
 }
 
+@media screen and (max-width: 580px) {
+  .para-info {
+    max-width: 90%;
+    background: rgba(0, 0, 0, .4);
+  }
+
+  .paralax-bold-text {
+    font-size: 17px;
+  }
+}
 @media screen and (max-width: 550px) {
   .parallax-1 .title {
     font-size: 2.3rem;
@@ -442,9 +457,9 @@ footer a:hover {
     max-width: 250px;
   }
 
-  .para-info {
+ /* .para-info {
     max-width: 300px;
-  }
+  }*/
 
   .parallax-1 span, .parallax-2 span {
     font-size: 3rem;
@@ -814,7 +829,7 @@ nav button.navbar-toggler {
 }
 
 .slob-uvod-text {
-    font-size: 21px;
+    font-size: 19px;
 }
 
 .tab-pane {
