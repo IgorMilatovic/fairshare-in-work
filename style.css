@@ -573,7 +573,8 @@ dt {
   padding: 20px;
 }
 
-.img_box {
+.img_box,
+.pub_admin_img  {
   height: 100%;
 }
 .img_box img {
