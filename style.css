@@ -794,6 +794,10 @@ nav button.navbar-toggler {
   padding: 50px;
 }
 
+.modal-title-md {
+  font-size: 2.3rem;
+}
+
 @media only screen and (max-width: 992px) {
   .modal-inner {
     padding: 20px;
