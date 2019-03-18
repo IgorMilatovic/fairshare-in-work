@@ -565,6 +565,10 @@ dt {
   border: 1px solid var(--yellow);
 }
 
+.target, .target * {
+  cursor: pointer !important;
+}
+
 .box_tall {
   padding: 20px;
 }
