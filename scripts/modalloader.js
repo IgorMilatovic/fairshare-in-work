@@ -46,7 +46,7 @@ function findTarget(element) {
 // displays overlay and modal and halts page scroll
 function showModal(query) {
  let readMore = document.querySelector(`.${query}`);
- readMore.style.display = "grid";
+ readMore.style.display = "block";
  let arrowDiv = document.querySelector(`.arrow-back`);
   console.log(readMore);
  readMore.childNodes[1].appendChild(arrowDiv);
