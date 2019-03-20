@@ -628,6 +628,11 @@ dt {
   font-size: 2rem;
   display: inline-block;
 }
+
+.box_tit-treba-vam {
+	font-size: 1.5rem;
+}
+
 .box_tit_size {
   font-size: 2rem;
 }
@@ -832,7 +837,7 @@ nav button.navbar-toggler {
 }
 
 .modal-inner * {
-  padding-bottom: 50px;
+  /*padding-bottom: 50px;*/
 }
 
 /*.modal-outer:before {
