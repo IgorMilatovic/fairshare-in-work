@@ -571,6 +571,8 @@ dt {
 
 .box_tall {
   padding: 20px;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 .img_box {
@@ -676,18 +678,10 @@ dt {
     position: relative;
     grid-column: span 2;
   }
-  .box_tall {
-    display: grid;
-    align-content: center; 
-    grid-row: 1 / 3;
-    grid-column: span 1;
-    padding: 20px;
-    grid-auto-flow: dense;
-    font-size: 19px;
-  }
   
-  #saveta {
-    grid-column: 2/3;
+  .box_tall {
+    grid-row: 1/3;
+
   }
 
   h2 {
@@ -714,9 +708,30 @@ dt {
     grid-column: span 2;
     grid-row: span 2; 
   }
-
-  #analiza {
+  
+  .box_tall {
+    /*display: grid;*/
+    align-content: center; 
+    grid-row: 1 / 3;
+    grid-column: 1/2;
+    padding: 20px;
+    grid-auto-flow: dense;
+    font-size: 19px;
+  }
+  #expertsko {
     grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  
+  #partnerstvo {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  #saveta {
+    grid-column: 3/4;
+  }
+  #analiza {
+    grid-column: 3/4;
   }
   .img_box {
     grid-row: span 1;
@@ -1199,5 +1214,3 @@ ul {
 .dwnld-p {
   width: 95%;
 }
-
-
