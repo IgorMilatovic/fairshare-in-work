@@ -511,11 +511,19 @@ dt {
 }
 
 .yellow {
-  color: var(--yellow);
+  color: var(--ivory);
+}
+
+.ivory {
+	color: ivory;
+}
+
+.black {
+	color: var(--black);
 }
 
 .manydots {
-  color: var(--yellow);
+  color: var(--ivory);
   font-size: 2rem;
 }
 
@@ -582,6 +590,10 @@ dt {
   height: 100%;
 }
 
+.manuell {
+	filter: grayscale(80%);
+}
+
 .box_big {
   padding: 20px;
   display: grid;
@@ -626,7 +638,7 @@ dt {
   width: 100%;
   padding: 20px;
   z-index: 10;
-  color: var(--yellow);
+  color: var(--ivory);
   font-size: 2rem;
   display: inline-block;
 }
@@ -650,6 +662,10 @@ dt {
 
 .publishing-ul {
   font-size: 19px;
+}
+
+.izdavastvo-arrow {
+	font-size: 35px;
 }
 
 .black {
@@ -849,6 +865,7 @@ nav button.navbar-toggler {
   font-size: 20px;
   background-color: var(--black);
   border: 0;
+  display: block !important;
 }
 
 .modal-inner * {
