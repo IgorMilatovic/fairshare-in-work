@@ -767,7 +767,9 @@ dt {
     grid-column: span 3;
   }
   
-  #zastupnik,
+  #zastupnik {
+    grid-column: 1/2;
+  }
   #medijacija {
     grid-column: 1/3;
   }
