@@ -573,6 +573,16 @@ dt {
   border: 1px solid var(--yellow);
 }
 
+@media screen and (max-width: 1225px) and (min-width: 600px) {
+	.yin-yang-img {
+		-webkit-transform: rotate(90deg);
+	    -moz-transform: rotate(90deg);
+	    -o-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	    transform: rotate(90deg);
+	}
+}
+
 .target, .target * {
   cursor: pointer !important;
 }
