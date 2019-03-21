@@ -699,6 +699,13 @@ dt {
     grid-row: 1/3;
 
   }
+  .flimsy {
+    display: none;
+  }
+  .producent {
+    grid-column: 2/3;
+  }
+
 
   h2 {
     width: 90%;
@@ -725,6 +732,10 @@ dt {
     grid-row: span 2; 
   }
   
+  .flimsy {
+    display: block;
+  }
+
   .box_tall {
     /*display: grid;*/
     align-content: center; 
@@ -766,6 +777,7 @@ dt {
     position: relative;
     grid-column: span 3;
   }
+
   
   #zastupnik {
     grid-column: 1/2;
