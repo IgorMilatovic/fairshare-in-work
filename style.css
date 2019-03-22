@@ -40,7 +40,7 @@ body {
   margin-top: 60px;
   background: var(--black);
   color: var(--ivory);
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Exo', sans-serif;
 }
 
 a {
@@ -359,7 +359,7 @@ footer a:hover {
 
 .fab {
   font-size: 35px;
-  color: var(--ivory);
+  color: var(--yellow);
 }
 
 .V-icon {
@@ -537,6 +537,7 @@ dt {
   text-shadow: 0 0 0;
   margin-left: 0;
   letter-spacing: 0;
+  font-family: "Impacto", sans-serif;
 }
 
 .hr-yellow {
@@ -554,7 +555,12 @@ dt {
 }
 
 .hr-ivory-double-footer {
-  width: 200px;
+  width: 250px;
+  border: 1px solid var(--yellow);
+}
+
+.hr-ivory-double-footer-long {
+  width: 95%;
 }
 
 /*  boxes for all screens  */
@@ -649,8 +655,9 @@ dt {
   padding: 20px;
   z-index: 10;
   color: var(--ivory);
-  font-size: 2rem;
+  font-size: 2.2rem;
   display: inline-block;
+  font-family: "Impacto", sans-serif;
 }
 
 .box_tit-treba-vam {
@@ -662,8 +669,8 @@ dt {
 }
 
 .box_font {
-  font-size: 1.4rem !important;
-  font-weight: 700;
+  font-size: 1.29rem !important;
+  font-weight: 400;
 }
 
 .izdavastvo-span {
@@ -1028,13 +1035,7 @@ footer {
 
 .mini-logo {
   width: 30px;
-  filter: grayscale(100%);
   margin-top: -5px;
-}
-
-.kvazi-copy {
-  border-top: 1px solid ivory;
-  border-bottom: 1px solid ivory;
 }
 
 @media only screen and (min-width: 770px) and (max-width: 870px) {
@@ -1101,10 +1102,6 @@ ul {
     font-size: 35px;
 }
 
-.footer-section-title {
-  border-bottom: solid 1px #fff;
-}
-
 .redish-color {
   color: rgba(255, 100, 100, 1);
 }
@@ -1138,10 +1135,8 @@ ul {
     border-bottom: none !important;
 }
 
-#tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    /*color: #336683 !important;*/
-    /*background-color: #a4d6ef !important;*/
-    /*border-color: transparent transparent var(--yellow);*/
+.nav-item, #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    font-family: "Impacto", sans-serif;
 }
 
 #tabs .nav-tabs .nav-link {
@@ -1152,6 +1147,9 @@ ul {
     color: var(--ivory);
 }
 
+.nav-tabs-slobodna {
+	font-family: "Impacto", sans-serif;
+}
 .tab-nav-item {
     border-radius: 0 !important;
     width: 250px;
