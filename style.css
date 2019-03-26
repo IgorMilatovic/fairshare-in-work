@@ -44,11 +44,20 @@ body {
 }
 
 a {
-  color: rgba(100, 150, 255, 1);
+  color: var(--yellow);
 }
+
 a:hover {
   text-decoration: none;
-  color: #337edb;
+  color: orange;
+}
+
+b {
+	font-weight: 800;
+}
+
+.little-i {
+	font-size: 1.8rem;
 }
 
 /*  navbar  */
@@ -493,6 +502,10 @@ footer a:hover {
   border-bottom: 2px solid var(--yellow);
 }
 
+.konsultacije-thin {
+	font-weight: 300;
+}
+
 dt + dd {
     border: 1px var(--ivory) solid;
     border-radius: 5px;
@@ -673,8 +686,12 @@ dt {
 }
 
 .box_font {
-  font-size: 1.29rem !important;
+  font-size: 1.26rem;
   font-weight: 400;
+}
+
+.procitaj-vise {
+	color: orange;
 }
 
 .izdavastvo-span {
@@ -711,6 +728,7 @@ dt {
     grid-auto-flow: dense;
     width: 90%;
   }
+
   .box_xlong {
     position: relative;
     grid-column: span 2;
@@ -718,8 +736,8 @@ dt {
   
   .box_tall {
     grid-row: 1/3;
+	}
 
-  }
   .flimsy {
     display: none;
   }
@@ -870,6 +888,10 @@ nav button.navbar-toggler {
   max-height: 87vh;
   overflow-y: auto;
   padding: 50px;
+}
+
+.modal-title {
+  font-size: 2.4rem;
 }
 
 .modal-title-md {

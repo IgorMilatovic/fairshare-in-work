@@ -72,3 +72,10 @@ close.onclick = () => {
   document.querySelector('html').style.overflowY = "scroll";
 
 }
+
+// prosiri-skupi-txt-changer
+$(".procitaj-vise").click(function(){
+
+    $(this).text($(this).text() == 'pročitaj više' ? 'skupi tekst' : 'pročitaj više');
+
+});
