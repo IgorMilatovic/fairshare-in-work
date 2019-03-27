@@ -49,7 +49,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: orange;
+  color: #e3b602;
 }
 
 b {
@@ -339,12 +339,17 @@ h2 {
   transition: all .4s;
 }
 
-.fa-icon-footer {
+.fa-icon-footer, .fab {
   font-size: 23px;
+  color: var(--yellow);
 }
 
 .fa-icon-footer:hover, .fab:hover {
-  color: var(--yellow);
+  color: #e3b602;
+}
+
+.fonNmail:hover {
+	color: #e3b602;
 }
 
 footer img {
@@ -357,18 +362,13 @@ footer .soc-icons {
   margin-top: 4rem;
 }
 
-footer a {
-  color: var(--ivory);
-}
-
 footer a:hover {
-  color: var(--yellow);
+  color: #e3b602;
   transition: all .4s;
 }
 
 .fab {
   font-size: 35px;
-  color: var(--ivory);
 }
 
 .V-icon {
@@ -546,7 +546,6 @@ dt {
 
 .sectionh2 {
   font-size: 1.8rem;
-  font-family: 'Oswald', sans-serif;
   text-shadow: 0 0 0;
   margin-left: 0;
   letter-spacing: 0;
@@ -1262,7 +1261,7 @@ ul {
 }
 
 .nazad-link:hover {
-  color: darkorange !important;
+  color: #e3b602 !important;
 }
 
 .tab-pane-ugovor {
