@@ -614,6 +614,7 @@ dt {
   padding: 20px;
   grid-column: 1/2;
   grid-row: 1/2;
+  font-size: 18px;
 }
 
 .img_box {
